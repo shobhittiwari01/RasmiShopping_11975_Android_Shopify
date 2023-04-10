@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".yotporewards.rewarddashboard.RewardDashboard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/title_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/black"
+            android:padding="@dimen/padding_15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/balancetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="whitetext" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/pointtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="whitetext" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/getreward_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_8"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintTop_toBottomOf="@+id/title_section">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rewardicon"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/giftbox" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_15"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/get_rewards"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rewardicon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/earnpoint_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_6"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintTop_toBottomOf="@+id/getreward_section">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/earnpointicon"
+                android:layout_width="@dimen/width_35"
+                android:layout_height="@dimen/height_35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/star" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_15"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/earn_points"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/earnpointicon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/referfriend_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_5"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintTop_toBottomOf="@+id/earnpoint_section">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/referfriendicon"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart_image" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_15"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/refer_friends"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/referfriendicon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/myrewards_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintTop_toBottomOf="@+id/referfriend_section">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/myrewardsdicon"
+                android:layout_width="@dimen/width_45"
+                android:layout_height="@dimen/height_45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user_reward" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_15"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/my_rewads"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/myrewardsdicon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/faqs_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_7"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintTop_toBottomOf="@+id/myrewards_section">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/faqsicon"
+                android:layout_width="@dimen/width_35"
+                android:layout_height="@dimen/height_35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/faq_help" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_15"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/faqs"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/faqsicon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appThemeColor">#df3faf</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appTheme">#08C5FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_color">#F1F1F1</color>
+    <color name="notificationtittle">#383838</color>
+    <color name="notification_back">#F1F1F1</color>
+    <color name="lightgray">#F2F2F2</color>
+    <color name="black">#000000</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="green">#008000</color>
+    <color name="light_cream">#FFFFFADC</color>
+    <color name="red">#F90A0B</color>
+    <color name="price_red">#F90A0B</color>
+    <color name="orange">#ff9500</color>
+    <color name="bluetext">#2472C1</color>
+    <color name="normalgrey3txtregular">#6B6B6B</color>
+    <color name="secondary2">#2472C1</color>
+    <color name="normalgrey1text">#050505</color>
+    <color name="normalgrey2text">#383838</color>
+    <color name="notificationmessage">#383838</color>
+    <color name="normalgrey3text">#6B6B6B</color>
+    <color name="greentext">#28A138</color>
+    <color name="grey5txt">#D1D1D1</color>
+    <color name="magenativecolor">#5160C0</color>
+    <color name="darkblue">#143F6B</color>
+    <color name="darkblue2">#69A5E3</color>
+    <color name="rategreen">#28A138</color>
+    <color name="blue">#2472C1</color>
+    <color name="customgrey">#DEDEDE</color>
+    <color name="menucopyright">#9E9E9E</color>
+    <color name="submenutext">#6B6B6B</color>
+    <color name="clearrecentcolor">#F55353</color>
+    <color name="nocarttext">#303030</color>
+    <color name="graythememode">#EDEBEB</color>
+    <color name="outofstockred">#F43939</color>
+    <color name="specialpricecolor">#575453</color>
+    <color name="cartbackground">#F1F1F1</color>
+    <color name="cardbackground">#FFFFFF</color>
+    <color name="toolbarcolor" >#FFFFFF</color>
+    <color name="icon_color" >#000000</color>
+    <color name="countback" >#FFFFFF</color>
+    <color name="searchicon_color">#383838</color>
+    <color name="indicatorback" >#F2F2F2</color>
+    <color name="dotscolor">#6B6B6B</color>
+    <color name="strokecolor">#D1D1D1</color>
+    <color name="divider">@color/gray_color</color>
+    <color name="subscribeback" >@color/gray_color</color>
+    <color name="unselector">#D1D1D1</color>
+    <color name="gradientback">#F2F2F2</color>
+    <color name="advancesearch">#6B6B6B</color>
+    <string name="webback" translatable="false">#FFFFFF</string>
+    <string name="webtext" translatable="false">#000000</string>
+    <color name="outofstock_background">#F0F0F0</color>
+
+
+
+    <color name="themeselectorcolor">#554C9B</color>
+    <color name="themeseleccolor">#143F6B</color>
+    <color name="themepurple">#554C9B</color>
+
+
+</resources>

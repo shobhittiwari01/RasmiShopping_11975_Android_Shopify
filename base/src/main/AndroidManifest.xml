@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rasmishopping.app">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:name, android:allowBackup,android:theme"
+        tools:targetApi="m">
+        <activity
+            android:configChanges="uiMode"
+            android:name=".basesection.activities.InternetActivity"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica"></meta-data>
+
+        <activity
+            android:configChanges="uiMode"
+            android:name=".maintenence_section.MaintenenceActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="uiMode"
+            android:name=".productsection.activities.AllAliReviewsListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:configChanges="uiMode"
+            android:name=".ordersection.activities.OrderDetails"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="uiMode"
+            android:name=".cartsection.activities.NativeCheckoutAddressPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="uiMode"
+            android:name=".productsection.activities.AllJudgeMeReviews"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.JudgeMeCreateReview"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.VideoPlayerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".cartsection.fragment.CardDataActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".cartsection.fragment.ShippingMethod"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.AllReviewListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.ZoomActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".checkoutsection.activities.OrderSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".dashboard.activities.AccountActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.earnrewards.FaqsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.myrewards.MyRewardsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.referfriend.ReferFriendActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.earnrewards.EarnRewardsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.getrewards.GetRewardsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.rewarddashboard.RewardDashboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".yotporewards.withoutlogin.RewardsPointActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".notificationsection.FirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notificationsection.FirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".jobservicessection.JobScheduler"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:configChanges="uiMode"
+            android:name=".basesection.activities.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <tools:validation testUrl="https://isli.shopping/products/3-4-sleeve-kimono-dress-coral"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter tools:node="merge" android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="isli.shopping"
+                    android:pathPrefix="/products"/>
+                <data
+                    android:scheme="http"
+                    android:host="isli.shopping"
+                    android:pathPrefix="/products"
+                    />
+                <data
+                    android:scheme="https"
+                    android:host="isli.shopping"
+                    android:pathPrefix="/collections"/>
+                <data
+                    android:scheme="http"
+                    android:host="isli.shopping"
+                    android:pathPrefix="/collections"
+                    />
+
+            </intent-filter>
+        </activity>
+        <!--<receiver
+            android:name=".homesection.activities.BroadcastInternetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>-->
+
+        <activity android:configChanges="uiMode"
+            android:name=".addresssection.activities.AddressList"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:configChanges="uiMode"
+            android:name=".basesection.activities.Weblink"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".basesection.activities.NewBaseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.ProductList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.ProductView"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".collectionsection.activities.CollectionList"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".collectionsection.activities.CollectionListMenu"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".wishlistsection.activities.WishList"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".cartsection.activities.CartList"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:configChanges="uiMode"
+            android:name=".cartsection.activities.SubscribeCartList"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:configChanges="uiMode"
+            android:name=".ordersection.activities.OrderList"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".searchsection.activities.AutoSearch"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".checkoutsection.activities.CheckoutWeblink"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".trialsection.activities.TrialExpired"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name=".homesection.activities.HomePage"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!--
+<activity android:exported="true"
+            android:name=".homesection.activities.NoInternetConnection"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:configChanges="uiMode"
+            android:name=".loginsection.activity.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:configChanges="uiMode"
+            android:name=".userprofilesection.activities.UserProfile"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:configChanges="uiMode"
+            android:name=".loginsection.activity.RegistrationActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.VariationsActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:configChanges="uiMode"
+            android:name=".searchsection.activities.SearchByScanner"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:configChanges="uiMode"
+            android:name=".livepreviewsection.LivePreview"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.WriteAReview"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity android:configChanges="uiMode"
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode"
+            android:name=".productsection.activities.FilterPage"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:configChanges="uiMode"
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+            android:exported="true">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode"
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+            android:exported="true">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="uiMode"
+            android:name=".cartsection.activities.CouponsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".basesection.activities.NotificationActivity"
+            android:configChanges="uiMode"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".basesection.activities.ThemeSelectionActivity"
+            android:configChanges="uiMode"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".basesection.activities.DemoActivity"
+            android:configChanges="uiMode"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

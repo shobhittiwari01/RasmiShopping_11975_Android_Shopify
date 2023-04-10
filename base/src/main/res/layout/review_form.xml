@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alert_dialog_shape"
+            android:paddingLeft="@dimen/padding_left_10"
+            android:paddingTop="@dimen/padding_top_15"
+            android:paddingRight="@dimen/padding_right_10"
+            android:paddingBottom="@dimen/padding_bottom_25">
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/write_a_review"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                app:texttype="normal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_20"
+                android:text="@string/please_select_rating"
+                android:textSize="@dimen/text_size_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/close_but" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:progressBackgroundTint="@color/gray_color"
+                android:progressTint="@color/appTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/close_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/close_icon" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintTop_toBottomOf="@+id/rating_bar">
+
+                <com.rasmishopping.app.customviews.MageNativeEditText
+                    android:id="@+id/name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:hint="@string/author_name"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_12" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/review_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintTop_toBottomOf="@+id/reviewer_email">
+
+                <com.rasmishopping.app.customviews.MageNativeEditText
+                    android:id="@+id/title_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:hint="@string/title"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_12" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/review_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintTop_toBottomOf="@+id/review_title">
+
+                <com.rasmishopping.app.customviews.MageNativeEditText
+                    android:id="@+id/body_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:hint="@string/write_your_review_here"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/padding_8"
+                    android:textSize="@dimen/text_size_12" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reviewer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintTop_toBottomOf="@+id/customer_name">
+
+                <com.rasmishopping.app.customviews.MageNativeEditText
+                    android:id="@+id/email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:hint="@string/email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_8"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_12" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/submit_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:text="@string/submit"
+                app:buttontype="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/review_body" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

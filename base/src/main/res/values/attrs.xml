@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MageNativeTextView">
+        <attr name="texttype" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MageNativeButton">
+        <attr name="buttontype" format="string" />
+        <attr name="buttonastext" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MageNativeEditText">
+        <attr name="edittype" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MageNativeRadioButton">
+        <attr name="radiotype" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MageNativeViewPager">
+        <attr name="viewpager" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MageDotsIndicator">
+        <attr format="integer" name="dots_count"/>
+        <attr format="float" name="selected_dot_scale_factor"/>
+        <attr format="reference" name="selected_dot_resource"/>
+        <attr format="reference" name="unselected_dot_resource"/>
+        <attr format="reference" name="first_selected_dot_resource"/>
+        <attr format="reference" name="first_unselected_dot_resource"/>
+        <attr format="dimension" name="dot_height"/>
+        <attr format="dimension" name="dot_width"/>
+        <attr format="dimension" name="first_dot_height"/>
+        <attr format="dimension" name="first_dot_width"/>
+        <attr format="dimension" name="margins_between_dots"/>
+    </declare-styleable>
+</resources>

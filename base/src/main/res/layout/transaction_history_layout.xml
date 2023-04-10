@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/getcredit_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_8"
+        android:layout_marginEnd="@dimen/margin_end_8"
+        android:layout_marginTop="@dimen/margin_top_5"
+
+        android:padding="@dimen/padding_20"
+      >
+      <ImageView
+          android:id="@+id/plus"
+          android:layout_width="@dimen/width_20"
+          android:layout_height="@dimen/height_20"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+           android:tint="@color/green"
+          android:src="@drawable/plus"/>
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="@dimen/width_20"
+            android:layout_height="@dimen/height_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tint="@color/red"
+            android:visibility="gone"
+            android:src="@drawable/minu"/>
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/debit_credit_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_5"
+            android:textColor="#000654"
+            android:textAllCaps="true"
+      app:layout_constraintStart_toEndOf="@id/plus"
+            app:layout_constraintTop_toTopOf="@id/plus"
+            app:layout_constraintBottom_toBottomOf="@id/plus"
+            app:texttype="bold" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_5"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:maxLines="10"
+            app:layout_constraintTop_toBottomOf="@id/debit_credit_amt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="bold" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_5"
+            android:textAllCaps="true"
+           app:layout_constraintTop_toBottomOf="@id/summary"
+         app:layout_constraintStart_toStartOf="parent"
+            app:texttype="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:id="@+id/line"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/mdtp_dark_gray"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            android:layout_marginTop="@dimen/margin_top_5"
+
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

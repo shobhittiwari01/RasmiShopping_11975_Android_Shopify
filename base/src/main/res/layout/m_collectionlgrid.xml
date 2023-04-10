@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <com.rasmishopping.app.customviews.MageNativeTextView
+        android:id="@+id/headertext"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:textAlignment="viewStart"
+        app:texttype="productsliderheader" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categorylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/labeltext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30"
+            android:layout_marginStart="@dimen/margin_start_5"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:texttype="bold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

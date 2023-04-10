@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/corner_radius_5"
+        app:cardElevation="@dimen/card_elevation_2"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/padding_30">
+
+<ImageView
+    android:id="@+id/cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:src="@drawable/crosssss"/>
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:texttype="normal"
+                android:text="@string/want_to_apply_discount_code"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/cancel" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:gravity="center"
+                app:texttype="normal"
+                android:text="@string/you_can_apply_discount_code_here"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/discount_code_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/round_corner_lightgray"
+                android:hint="@string/discount_code"
+                android:inputType="textCapCharacters"
+                android:paddingStart="@dimen/padding_start_8"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintTop_toBottomOf="@+id/title_2" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/yes_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:text="@string/yes_apply_code"
+                app:buttontype="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/no_but"
+                app:layout_constraintTop_toBottomOf="@+id/discount_code_edt" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/no_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:layout_marginEnd="@dimen/margin_end_5"
+                android:text="@string/no"
+                app:buttontype="normal"
+                app:layout_constraintEnd_toStartOf="@+id/yes_but"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discount_code_edt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

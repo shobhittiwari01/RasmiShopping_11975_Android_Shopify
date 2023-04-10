@@ -1,0 +1,415 @@
+<!--
+ ~ Copyright/**
+ ~          * CedCommerce
+ ~           *
+ ~           * NOTICE OF LICENSE
+ ~           *
+ ~           * This source file is subject to the End User License Agreement (EULA)
+ ~           * that is bundled with this package in the file LICENSE.txt.
+ ~           * It is also available through the world-wide-web at this URL:
+ ~           * http://cedcommerce.com/license-agreement.txt
+ ~           *
+ ~           * @category  Ced
+ ~           * @package   MageNative
+ ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+ ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ ~           * @license      http://cedcommerce.com/license-agreement.txt
+ ~           */
+ -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/toolbarcontainer"
+                >
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:contentInsetStart="0dp"
+                    android:contentInsetLeft="0dp"
+                    android:contentInsetEnd="0dp"
+                    android:contentInsetRight="0dp"
+                    android:contentInsetStartWithNavigation="0dp"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:theme="@style/AppTheme">
+                    <ImageView
+                        android:id="@+id/toolimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?actionBarSize"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:layout_gravity="start"
+                        android:visibility="gone"
+                        android:padding="@dimen/padding_5"
+                        android:src="@drawable/splash"
+                        />
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/tooltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_60"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_2"
+                        android:text="@string/app_name"
+                        android:visibility="gone"
+                        app:texttype="tooltext" />
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/toolcarttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_60"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        app:texttype="toolcarttext" />
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/toolcartsubtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_60"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="1dp"
+                        app:texttype="toolcartsubtext" />
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/searchsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@drawable/corner_search"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        >
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+
+                            >
+                            <ImageView
+                                android:id="@+id/search_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/searchlatest"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/search"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_40"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/i_m_shoppping_for"
+                            android:maxLines="1"
+                            android:paddingTop="4dp"
+                            android:paddingStart="3dp"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_weight="0.8"
+                            app:texttype="tooltextnormal" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:id="@+id/voicesearch"
+                            android:visibility="gone"
+                            >
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9E9E9E"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_voice"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/autosearchsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@drawable/corner_auto_search"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            >
+                            <ImageView
+                                android:id="@+id/auto_search_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/searchlatest"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/auto_search"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:hint="@string/search"
+                            android:layout_weight="0.8"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:textSize="12sp"
+                            android:textAlignment="viewStart"
+                            android:gravity="start|center_vertical"
+                            android:textColorHint="#9E9E9E"
+                            android:background="@android:color/transparent"
+                            android:textCursorDrawable="@drawable/black_cursor"
+                            app:edittype="auto_search" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:id="@+id/auto_voicesearch"
+                            >
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9E9E9E"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_voice"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.Toolbar>
+                <View android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/shadow"
+                    android:alpha="0.3"
+                    android:background="@drawable/toolbar_dropshadow"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/toolbarcontainer"
+                android:id="@+id/advancesearch">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/gradient"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toStartOf="@+id/brcodesearch"
+                    android:id="@+id/imagesearch">
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_image_search"
+                        android:text="@string/takephoto"
+                        android:gravity="center"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:texttype="advancesearch"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_image_search"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/icon_image_search"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    android:background="@drawable/gradient"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagesearch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/brcodesearch">
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_barcode_search"
+                        android:text="@string/qrcode"
+                        android:gravity="center"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:texttype="advancesearch"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_scan"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_barcode_search"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/icon_barcode_search"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/nav_view"
+                app:layout_constraintTop_toBottomOf="@id/advancesearch" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chat_but"
+                android:layout_width="@dimen/width_100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/chat_bg"
+                android:paddingStart="@dimen/padding_start_20"
+                android:paddingTop="@dimen/padding_top_8"
+                android:paddingEnd="@dimen/padding_end_12"
+                android:paddingBottom="@dimen/padding_bottom_8"
+                android:translationZ="10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/nav_view"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/support_icon"
+                    android:layout_width="@dimen/width_20"
+                    android:layout_height="@dimen/height_20"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/telephone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_8"
+                    android:text="@string/help"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/support_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/whatsappchat"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_margin="@dimen/margin_10"
+                android:src="@drawable/ic_whatsapp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/container"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/demostoresss"
+                android:layout_width="@dimen/width_100"
+                android:layout_height="@dimen/height_48"
+                android:layout_margin="@dimen/margin_10"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/whatsappchat"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/demostoresnew"
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/height_50"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/circular_theme_background"
+                android:padding="@dimen/padding_5"
+                android:scaleType="centerCrop"
+
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/whatsappchat"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/messengerchat"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_margin="@dimen/margin_10"
+                android:src="@drawable/ic_messenger"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/container"
+                app:layout_constraintStart_toStartOf="parent" />
+            <ImageView
+                android:id="@+id/livesale"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_margin="@dimen/margin_10"
+                android:src="@drawable/livesale"
+                app:tint="@color/red"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/whatsappchat"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:labelVisibilityMode="labeled"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:menu="@menu/bottom_menu">
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <fragment
+            android:id="@+id/leftmenu"
+            android:name="com.rasmishopping.app.basesection.fragments.LeftMenu"
+            android:layout_width="@dimen/width_290"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="-65dp"
+            android:layout_marginStart="-65dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:layout="@layout/m_leftmenufragment"
+            tools:layout="@layout/m_leftmenufragment" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

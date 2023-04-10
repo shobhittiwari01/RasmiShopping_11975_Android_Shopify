@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="order"
+            type="com.rasmishopping.app.ordersection.models.Order" />
+
+        <variable
+            name="features"
+            type="com.rasmishopping.app.basesection.models.FeaturesModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        bind:cardCornerRadius="@dimen/corner_radius_2"
+        bind:cardElevation="@dimen/card_elevation_2"
+        bind:cardBackgroundColor="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        bind:cardUseCompatPadding="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_bottom_10">
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/ordernoheading"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_start_10"
+                android:text="@string/ordernoheading"
+                android:textAllCaps="true"
+                bind:layout_constraintEnd_toStartOf="@id/orderno"
+                bind:layout_constraintHorizontal_weight="0.2"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:texttype="ordertext" />
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/orderno"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50"
+                android:gravity = "center_vertical|left|start"
+                android:text="@{order.ordernumber}"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintBottom_toBottomOf="@+id/ordernoheading"
+                bind:layout_constraintEnd_toStartOf="@id/orderdetails"
+                bind:layout_constraintHorizontal_weight="0.6"
+                bind:layout_constraintStart_toEndOf="@id/ordernoheading"
+                bind:layout_constraintTop_toTopOf="@+id/ordernoheading"
+                bind:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/orderdetails"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50"
+                android:gravity="center_vertical|end"
+                android:onClick="@{view->order.orderView(view,order)}"
+                android:paddingEnd="@dimen/padding_end_5"
+                android:text="@string/orderdetails"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintHorizontal_weight="0.2"
+                bind:layout_constraintStart_toEndOf="@id/orderno"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:texttype="normal" />
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line1"
+           android:background="@color/gray_color"
+           bind:layout_constraintTop_toBottomOf="@+id/ordernoheading"/>
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_start_5"
+                android:text="@{order.name}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/line1"
+                bind:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/track_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginStart="@dimen/margin_start_10"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_10"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/padding_10"
+                android:onClick="@{view->order.ShipwayTrack(view,order)}"
+                android:visibility="@{order.shipwaytrack == true ? View.VISIBLE : View.GONE}"
+                android:text="@string/trackorder"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/line1"
+         />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/placedontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_start_5"
+                android:text="@string/placedon"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/name"
+                bind:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:gravity="center_vertical"
+                android:text="@{order.date}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toEndOf="@id/placedontext"
+                bind:layout_constraintTop_toBottomOf="@id/name"
+                bind:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/totalspendingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_start_5"
+                android:text="@string/totalspending"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/placedontext"
+                bind:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/totalspending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:gravity="center_vertical"
+                android:text="@{order.price}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toEndOf="@id/totalspendingtext"
+                bind:layout_constraintTop_toBottomOf="@id/placedontext"
+                bind:texttype="bold" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:background="@color/gray_color"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintTop_toBottomOf="@id/totalspending" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/boughtforheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_start_10"
+                android:text="@string/boughtfor"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/line"
+                bind:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/boughtfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_2"
+                android:paddingStart="@dimen/padding_start_3"
+                android:text="@{order.boughtfor}"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                bind:layout_constraintBottom_toBottomOf="@+id/boughtforheading"
+                bind:layout_constraintStart_toEndOf="@id/boughtforheading"
+                bind:layout_constraintTop_toBottomOf="@id/line"
+                bind:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/returnorder"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginStart="@dimen/margin_start_10"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_10"
+                android:background="@drawable/button_bg"
+                android:onClick="@{view->order.returnPrime(view,order)}"
+                android:padding="@dimen/padding_10"
+                android:text="@string/returnorder"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                bind:buttontype="filtenormal"
+                android:visibility="@{order.returnorder == true ? View.VISIBLE : View.GONE}"
+                bind:layout_constraintEnd_toStartOf="@id/reorder_but"
+                bind:layout_constraintTop_toBottomOf="@+id/boughtfor" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/reorder_but"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginStart="@dimen/margin_start_10"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_10"
+                android:background="@drawable/button_bg"
+                android:text="@string/reorder"
+                bind:buttontype="filtenormal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="gone"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/boughtfor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
+

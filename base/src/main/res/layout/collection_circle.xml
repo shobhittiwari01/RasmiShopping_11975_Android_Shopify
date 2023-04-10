@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="category"
+            type="com.rasmishopping.app.homesection.models.CategoryCircle" />
+        <variable
+            name="commonmodel"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:tag="cat_one"
+        android:id="@+id/maincat"
+        android:onClick="@{view->category.catClick(view,category)}"
+        >
+           <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_one"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/share_icon"
+                app:circleImageUrl="@{category.cat_image_one}" />
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/cat_text_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_one"
+                android:text="@{category.cat_text_one}"
+                android:layout_marginTop="10dp"
+                app:texttype="circleslidertext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

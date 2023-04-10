@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="getrewardmodel"
+            type="com.rasmishopping.app.yotporewards.getrewards.model.GetRewardModelItem" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rewardcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_top_30"
+            android:background="@drawable/blackborder_selector"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/rewards_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_20"
+                android:text="@{getrewardmodel.name}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/rewardpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_40"
+                android:background="@color/black"
+                android:gravity="center"
+                android:padding="@dimen/padding_12"
+                android:text="@{getrewardmodel.costText}"
+                android:textColor="@color/white"
+                app:buttontype="normal"
+                app:layout_constraintTop_toBottomOf="@+id/rewards_price" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/width_50"
+            android:layout_height="@dimen/height_50"
+            app:srcCompat="@drawable/rupee" />
+    </FrameLayout>
+</layout>

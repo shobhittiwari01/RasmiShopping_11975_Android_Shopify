@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categorylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:id="@+id/gap"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

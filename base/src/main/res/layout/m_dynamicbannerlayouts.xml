@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="common"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+
+        <variable
+            name="home"
+            type="com.rasmishopping.app.homesection.models.Home" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bind:cardCornerRadius="5dp"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/margin_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bannerimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image"
+                android:tag="banner"
+                android:scaleType="fitXY"
+                imageUrl="@{common.imageurl}"
+                android:onClick="@{view->home.Click(view,home)}" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_youtube_icon"
+            android:translationZ="@dimen/translation_10"
+            android:visibility="gone"
+            bind:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

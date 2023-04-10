@@ -1,0 +1,1659 @@
+{
+  "top-bar_1615532812": {
+    "type": "top-bar",
+    "timestamp": "1615532812",
+    "uniqueId": "top-bar_1615532812",
+    "search_position": "search-as-icon",
+    "shape": "rounded",
+    "search_placeholder": "Search by products ",
+    "wishlist": "1",
+    "item_banner": "0",
+    "item_dots": "1",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "count_color": "{\"color\":\"#edb5f5\",\"opacity\":1,\"rgbastring\":\"rgba(237, 181, 245, 1)\"}",
+    "count_textcolor": "{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "icon_color": "{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "active_dot_color": "{\"color\":\"#143f6b\",\"opacity\":1,\"rgbastring\":\"rgba(20, 63, 107, 1)\"}",
+    "inactive_dot_color": "{\"color\":\"#d1d1d1\",\"opacity\":1,\"rgbastring\":\"rgba(209, 209, 209, 1)\"}",
+    "search_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "search_text_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "search_border_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "logo_image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/top-bar_1615532812_11671182108.png",
+    "item_total": ""
+  },
+  "sort_order": {
+    "top-bar_1615532812": 0,
+    "category-circle_16155356551092": 1,
+    "banner-slider_16496630661560": 2,
+    "standalone-banner_16699622042260": 3,
+    "standalone-banner_16699632336551": 4,
+    "three-product-hv-layout_16155543103370": 5,
+    "standalone-banner_16699637868192": 6,
+    "product-list-slider_16502641958450": 7,
+    "standalone-banner_16529674477790": 8,
+    "standalone-banner_16699695005583": 9,
+    "collection-grid-layout_16155476817186": 10,
+    "collection-list-slider_16165927934120": 11,
+    "standalone-banner_16588293348920": 12,
+    "product-list-slider_16699713847535": 13,
+    "fixed-customisable-layout_16528674620171": 14
+  },
+  "category-circle_16155356551092": {
+    "type": "category-circle",
+    "timestamp": "16155356551092",
+    "uniqueId": "category-circle_16155356551092",
+    "item_title": "1",
+    "item_border": "0",
+    "item_title_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "item_border_color": "{\"color\":\"#d1d1d1\",\"opacity\":1,\"rgbastring\":\"rgba(209, 209, 209, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_font_weight": "light",
+    "item_font_style": "normal",
+    "items": [
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/category-circle_16155356551092_11669961207.png",
+        "title": "Mens"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/category-circle_16155356551092_21669961218.png",
+        "title": "Womens"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "152927698980",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/category-circle_16155356551092_31669961241.png",
+        "title": "Kids"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "152927698980",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/category-circle_16155356551092_41669961250.png",
+        "title": "Tech"
+      },
+      {
+        "link_type": "list_collection",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/category-circle_16155356551092_51671183945.png",
+        "title": "All"
+      }
+    ]
+  },
+  "collection-grid-layout_16155476817186": {
+    "type": "collection-grid-layout",
+    "timestamp": "16155476817186",
+    "uniqueId": "collection-grid-layout_16155476817186",
+    "selection_type": "automatic",
+    "item_in_a_row": "3",
+    "item_rows": "2",
+    "item_shape": "rounded",
+    "item_text_alignment": "center",
+    "item_title": "1",
+    "item_border": "0",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#f2f2f2\",\"opacity\":1,\"rgbastring\":\"rgba(242, 242, 242, 1)\"}",
+    "item_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "items": [
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_11669970103.png",
+        "title": "Tshirts &  Polos"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_21669970136.png",
+        "title": "Skirts"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_31669970174.png",
+        "title": "Baby Dress"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_41669970178.png",
+        "title": "Footwear"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_51669970186.png",
+        "title": "Watches"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16155476817186_61669970190.png",
+        "title": "Ethnic  Wear"
+      }
+    ]
+  },
+  "three-product-hv-layout_16155543103370": {
+    "type": "three-product-hv-layout",
+    "timestamp": "16155543103370",
+    "uniqueId": "three-product-hv-layout_16155543103370",
+    "item_text_alignment": "left",
+    "item_shape": "square",
+    "header": "1",
+    "header_subtitle": "1",
+    "header_action": "0",
+    "item_border": "0",
+    "header_deal": "1",
+    "item_deal_start_date": "01\/16\/2023 12:13:29",
+    "item_deal_end_date": "01\/18\/2023 12:13:29",
+    "item_deal_format": "1day-20h-20m-20s",
+    "item_deal_message": "Offer Sale end soon!",
+    "header_title_text": "Recommended Items",
+    "header_subtitle_text": "Suggested for you",
+    "header_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_subtitle_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "header_deal_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_action_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_action_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#e80e0e\",\"opacity\":1,\"rgbastring\":\"rgba(232, 14, 14, 1)\"}",
+    "header_title_font_weight": "medium",
+    "header_subtitle_font_weight": "light",
+    "item_title_font_weight": "medium",
+    "header_title_font_style": "normal",
+    "header_subtitle_font_style": "normal",
+    "item_title_font_style": "normal",
+    "items": [
+      {
+        "link_type": "web_url",
+        "link_value": "https:\/\/magenative.myshopify.com\/collections\/men-fashion",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16155543103370_11669963639.png",
+        "title": "Men Fashion"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16155543103370_21669963681.png",
+        "title": "Watch"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16155543103370_31669963691.png",
+        "title": "Rings"
+      }
+    ]
+  },
+  "collection-list-slider_16165927934120": {
+    "type": "collection-list-slider",
+    "timestamp": "16165927934120",
+    "uniqueId": "collection-list-slider_16165927934120",
+    "item_shape": "rounded",
+    "item_text_alignment": "left",
+    "header": "1",
+    "header_subtitle": "1",
+    "item_border": "0",
+    "header_title_text": "Find your inner style icon",
+    "header_subtitle_text": "All the brands you love",
+    "header_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_subtitle_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#f2f2f2\",\"opacity\":1,\"rgbastring\":\"rgba(242, 242, 242, 1)\"}",
+    "header_title_font_weight": "medium",
+    "header_subtitle_font_weight": "light",
+    "item_title_font_weight": "medium",
+    "header_title_font_style": "normal",
+    "header_subtitle_font_style": "normal",
+    "item_title_font_style": "normal",
+    "item_total": "7",
+    "items": [
+      {
+        "link_type": "collections",
+        "link_value": "163509534756",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_1_1669971108.png",
+        "title": "OFF UPTO 12%"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368371748",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_2_1669971146.png",
+        "title": "OFF UPTO 12%"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_3_1669971160.png",
+        "title": "OFF UPTO 72%"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "261349703716",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_4_1658136293.png",
+        "title": "Baby Wear"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368240676",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_5_1658136340.png",
+        "title": "Men Fashion"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368371748",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_6_1658136368.png",
+        "title": "Black Friday Sale"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156367749156",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16165927934120_7_1658136410.png",
+        "title": "Women Dresses"
+      }
+    ],
+    "header_action": 0
+  },
+  "banner-slider_16496630661560": {
+    "type": "banner-slider",
+    "timestamp": "16496630661560",
+    "uniqueId": "banner-slider_16496630661560",
+    "item_dots": "1",
+    "choiceList": "0",
+    "active_dot_color": "{\"color\":\"#554c9b\",\"opacity\":\"1.00\",\"rgbastring\":\"rgba(85, 76, 155, 1)\"}",
+    "inactive_dot_color": "{\"color\":\"#ece8f8\",\"opacity\":\"1.00\",\"rgbastring\":\"rgba(236, 232, 248, 1)\"}",
+    "item_total": "3",
+    "items": [
+      {
+        "link_type": "collections",
+        "link_value": "163509534756",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/banner-slider_16496630661560_11669961781.png"
+      },
+      {
+        "link_type": "products",
+        "link_value": "4364448530468",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/banner-slider_16496630661560_21669961920.png"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "156368568356",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/banner-slider_16496630661560_31669962105.png"
+      }
+    ]
+  },
+  "product-list-slider_16502641958450": {
+    "type": "product-list-slider",
+    "timestamp": "16502641958450",
+    "uniqueId": "product-list-slider_16502641958450",
+    "item_shape": "rounded",
+    "item_alignment": "left",
+    "header": "1",
+    "header_subtitle": "1",
+    "header_action": "1",
+    "item_border": "0",
+    "item_title": "1",
+    "item_price": "1",
+    "item_compare_at_price": "1",
+    "header_deal": "1",
+    "item_deal_start_date": "02\/14\/2023 02:00:40",
+    "item_deal_end_date": "02\/28\/2023 16:00:40",
+    "item_deal_format": "1day:20h:20m:20s",
+    "item_deal_message": "Offer Sale end soon!",
+    "header_title_text": "Find your inner style icon",
+    "header_subtitle_text": "All the brands you love",
+    "header_action_text": "View All",
+    "header_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_subtitle_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "header_deal_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_action_color": "{\"color\":\"#554c9b\",\"opacity\":1,\"rgbastring\":\"rgba(85, 76, 155, 1)\"}",
+    "header_action_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#fafafa\",\"opacity\":1,\"rgbastring\":\"rgba(250, 250, 250, 1)\"}",
+    "item_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "item_price_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "item_compare_at_price_color": "{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "item_header_font_weight": "medium",
+    "header_subtitle_font_weight": "light",
+    "header_action_font_weight": "medium",
+    "item_title_font_weight": "medium",
+    "item_price_font_weight": "medium",
+    "item_compare_at_price_font_weight": "medium",
+    "item_header_font_style": "normal",
+    "header_subtitle_title_font_style": "normal",
+    "header_action_font_style": "normal",
+    "item_title_font_style": "normal",
+    "item_price_font_style": "normal",
+    "item_compare_at_price_font_style": "normal",
+    "item_total": "8",
+    "item_link_action_value": "156368240676",
+    "item_value": [
+      "4364528779300",
+      "4364497223716",
+      "4364529926180",
+      "4364496076836",
+      "4364485754916",
+      "4364494503972",
+      "4364450856996"
+    ],
+    "productData": [
+      {
+        "id": "4364528779300",
+        "title": "Hibi T-Shirt",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>Homecore's Hibi is the t-shirt of your dreams. Incredibly soft cotton in a classic style makes everyday casual Friday. Exposed seam down back. Color White. 100% Cotton. Made in Portugal.\u00a0<em>Jacob is wearing a Medium.<\/em><\/p>\n<p><em><span style=\"text-decoration: underline;\"><a href=\"http:\/\/babyandco.us\/collections\/homecore\">Shop our collection of\u00a0Homecore<\/a><\/span>.<\/em><\/p>",
+        "vendor": "Homecore",
+        "product_type": "men's t-shirts",
+        "created_at": "2019-11-15T15:34:55+05:30",
+        "handle": "hibi-top-white",
+        "updated_at": "2023-02-16T19:49:31+05:30",
+        "published_at": "2023-02-16T19:48:21+05:30",
+        "template_suffix": "",
+        "status": "active",
+        "published_scope": "web",
+        "tags": "03\/20, AW15, full moon, homecore, man, Shot 4\/3, signature, stripesmen, t-shirts, tees, tops, white",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364528779300",
+        "options": [
+          {
+            "id": 5678391164964,
+            "product_id": 4364528779300,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X Large"
+            ]
+          },
+          {
+            "id": 5678391197732,
+            "product_id": 4364528779300,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "White"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 30852934008868,
+            "product_id": 4364528779300,
+            "position": 1,
+            "created_at": "2022-12-02T12:24:55+05:30",
+            "updated_at": "2022-12-02T12:24:55+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle324_1.png?v=1669964095",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30852934008868"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle324_1.png?v=1669964095",
+        "price": "78.00",
+        "compare_at_price": "100.00"
+      },
+      {
+        "id": "4364497223716",
+        "title": "Slim Fit Jean in Indigo",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>Made in America denim from the Jean Shop NY celebrate quality and cut. Slim fitting, these jeans embrace natural forms. Front pockets with single coin pocket, back pockets. Single button with zip fly closure at center front. Color Indigo. 100% Cotton.\u00a0Made in U.S.A.\u00a0<em>Addis is wearing a 32.<\/em><\/p>",
+        "vendor": "Jean Shop NY",
+        "product_type": "men's denim",
+        "created_at": "2019-11-15T15:19:22+05:30",
+        "handle": "slim-fit-jean-in-indigo",
+        "updated_at": "2023-01-30T14:56:11+05:30",
+        "published_at": "2019-11-15T15:19:14+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "1\/5, AW15, bottoms, denim, jean, jean shop, man, newman, pants, Signature, visible, WEEK02",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364497223716",
+        "options": [
+          {
+            "product_id": 4364497223716,
+            "id": 5678337490980,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "32",
+              "33",
+              "34"
+            ]
+          },
+          {
+            "product_id": 4364497223716,
+            "id": 5678337523748,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Indigo"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364497223716,
+            "id": 30852937613348,
+            "position": 1,
+            "created_at": "2022-12-02T12:25:42+05:30",
+            "updated_at": "2022-12-02T12:25:42+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1979_1.png?v=1669964142",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30852937613348"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1979_1.png?v=1669964142",
+        "price": "378.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364529926180",
+        "title": "Marl Jacket",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>The Marl Jacket presents the structure of a suit jacket with the comfort of your favorite sweater. Three exterior pockets, three interior pockets. Homecore. Lining. Color Grey. 77% Cotton, 19% Polyester, 4% Elastane. Made in Portugal.\u00a0<em>Matt is 6'2 and wears a Medium. Product fits true to size.<\/em><\/p>",
+        "vendor": "Homecore",
+        "product_type": "men's coats & jackets",
+        "created_at": "2019-11-15T15:35:37+05:30",
+        "handle": "marl-jacket-grey",
+        "updated_at": "2023-02-01T12:26:10+05:30",
+        "published_at": "2019-11-15T15:35:34+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "4\/6, AW15, coats, grey, homecore, jacket, man, outerwear, Shot 6\/4\/15, signature",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364529926180",
+        "options": [
+          {
+            "product_id": 4364529926180,
+            "id": 5678393065508,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          },
+          {
+            "product_id": 4364529926180,
+            "id": 5678393098276,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Grey"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364529926180,
+            "id": 30852939317284,
+            "position": 1,
+            "created_at": "2022-12-02T12:26:14+05:30",
+            "updated_at": "2022-12-02T12:26:14+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1980.png?v=1669964174",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30852939317284"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1980.png?v=1669964174",
+        "price": "318.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364496076836",
+        "title": "Zipper Jacket",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>The Zipper Jacket is a slim fit with an army aesthetic. Covered button placket at front. Two exterior zip pockets, side angle pockets at front. Mesh Lining. Sage di Cret. Color Black. 100% Polyester. Made in Japan.\u00a0<em>Jacob is wearing a Large.<\/em><\/p>\n<p><em>Also available in <a href=\"http:\/\/babyandco.us\/products\/blouse-jacket-in-khaki\">Olive<\/a>.<\/em><\/p>\n<meta charset=\"utf-8\">\n<p><a href=\"http:\/\/babyandco.us\/collections\/sage-de-cret\"><em>Shop our collection of Sage de Cr<\/em><em><span>\u00ea<\/span>t.<\/em><\/a><\/p>",
+        "vendor": "Sage de Cret",
+        "product_type": "men's coats & jackets",
+        "created_at": "2019-11-15T15:18:51+05:30",
+        "handle": "blouse-jacket-in-black",
+        "updated_at": "2023-01-30T13:11:35+05:30",
+        "published_at": "2019-11-15T15:18:43+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "AW15, black, bounty, coats, jackets, man, newman, outerwear, sage de cret, Shot 3\/30, signature, WEEK12",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364496076836",
+        "options": [
+          {
+            "product_id": 4364496076836,
+            "id": 5678335590436,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          },
+          {
+            "product_id": 4364496076836,
+            "id": 5678335623204,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Black"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364496076836,
+            "id": 13518923235364,
+            "position": 1,
+            "created_at": "2019-11-15T15:18:51+05:30",
+            "updated_at": "2019-11-15T15:18:51+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16389.jpg?v=1573811331",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518923235364"
+          },
+          {
+            "product_id": 4364496076836,
+            "id": 13518923268132,
+            "position": 2,
+            "created_at": "2019-11-15T15:18:51+05:30",
+            "updated_at": "2019-11-15T15:18:51+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16387.jpg?v=1573811331",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518923268132"
+          },
+          {
+            "product_id": 4364496076836,
+            "id": 13518923300900,
+            "position": 3,
+            "created_at": "2019-11-15T15:18:51+05:30",
+            "updated_at": "2019-11-15T15:18:51+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16390.jpg?v=1573811331",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518923300900"
+          },
+          {
+            "product_id": 4364496076836,
+            "id": 13518923333668,
+            "position": 4,
+            "created_at": "2019-11-15T15:18:51+05:30",
+            "updated_at": "2019-11-15T15:18:51+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16391.jpg?v=1573811331",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518923333668"
+          },
+          {
+            "product_id": 4364496076836,
+            "id": 13518923366436,
+            "position": 5,
+            "created_at": "2019-11-15T15:18:51+05:30",
+            "updated_at": "2019-11-15T15:18:51+05:30",
+            "alt": null,
+            "width": 2048,
+            "height": 1462,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16397.jpg?v=1573811331",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518923366436"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_04_21706_16389.jpg?v=1573811331",
+        "price": "788.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364485754916",
+        "title": "Rustin Jacket",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p><span>The Rustin Jacket speaks to the raw urbanity of all things. Similar to its brother jacket the Rumor, this piece also includes unfinished hemlines, side paneling, and semi-raglan sleeves. Interior breast pocket. Front waist pockets. Single button\u00a0placket\u00a0closure at center front. Standing collar. Hannes Roether. Color Black. 100% Cotton, 95% Cotton, 5% Elastane.\u00a0<em>Addis is wearing a Small.\u00a0<\/em><\/span><\/p>\n<p><a href=\"http:\/\/babyandco.us\/collections\/hannes-roether-man\"><em><span style=\"text-decoration: underline;\">\ufeffShop our collection of Hannes Roether.<\/span><\/em><\/a><\/p>",
+        "vendor": "Hannes Roether",
+        "product_type": "men's coats & jackets",
+        "created_at": "2019-11-15T15:14:26+05:30",
+        "handle": "rustin-jacket-in-knit",
+        "updated_at": "2023-01-30T13:11:31+05:30",
+        "published_at": "2019-11-15T15:14:22+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "1\/20, cross, Hannes Roether, Jackets, knits, man, mens, newman, outerwear, SALE, salefave3, ss15, visible, WEEK04",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364485754916",
+        "options": [
+          {
+            "product_id": 4364485754916,
+            "id": 5678318845988,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X Large"
+            ]
+          },
+          {
+            "product_id": 4364485754916,
+            "id": 5678318878756,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Black"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364485754916,
+            "id": 13518873362468,
+            "position": 1,
+            "created_at": "2019-11-15T15:14:26+05:30",
+            "updated_at": "2019-11-15T15:14:26+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Look_11_21848_0654.jpg?v=1573811066",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518873362468"
+          },
+          {
+            "product_id": 4364485754916,
+            "id": 13518873395236,
+            "position": 2,
+            "created_at": "2019-11-15T15:14:26+05:30",
+            "updated_at": "2019-11-15T15:14:26+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Look_11_21848_0634.jpg?v=1573811066",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518873395236"
+          },
+          {
+            "product_id": 4364485754916,
+            "id": 13518873428004,
+            "position": 3,
+            "created_at": "2019-11-15T15:14:26+05:30",
+            "updated_at": "2019-11-15T15:14:26+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Look_11_21848_0657.jpg?v=1573811066",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518873428004"
+          },
+          {
+            "product_id": 4364485754916,
+            "id": 13518873460772,
+            "position": 4,
+            "created_at": "2019-11-15T15:14:26+05:30",
+            "updated_at": "2019-11-15T15:14:26+05:30",
+            "alt": null,
+            "width": 2048,
+            "height": 1462,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Look_11_21848_0659.jpg?v=1573811066",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518873460772"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Look_11_21848_0654.jpg?v=1573811066",
+        "price": "243.60",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364494503972",
+        "title": "Zipper Jacket",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>Sage de Cret is a menswear label made for men, and made to be worn as\u00a0however they see fit. Paying homage to the vibrant tradition of menswear, their pieces are unconstrained by convention.\u00a0The Zipper Jacket is a slim fit with an army aesthetic. Covered button placket at front. Two exterior zip pockets, side angle pockets at front. Mesh Lining. Color Olive. 100% Polyester. Made in Japan.\u00a0<em>Jacob is wearing a Large.<\/em><\/p>\n<p><em>Also available in<a href=\"http:\/\/babyandco.us\/products\/blouse-jacket-in-black\"> Black<\/a>.\u00a0<\/em><\/p>\n<meta charset=\"utf-8\">\n<p><a href=\"http:\/\/babyandco.us\/collections\/sage-de-cret\"><em>Shop our collection of Sage de Cr<\/em><em><span>\u00ea<\/span>t.<\/em><\/a><\/p>",
+        "vendor": "Sage de Cret",
+        "product_type": "men's coats & jackets",
+        "created_at": "2019-11-15T15:18:19+05:30",
+        "handle": "blouse-jacket-in-khaki",
+        "updated_at": "2023-01-31T17:32:13+05:30",
+        "published_at": "2019-11-15T15:18:11+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "03\/06, AW15, bounty, coats, jackets, man, newman, olive, outerwear, sage de cret, Shot 3\/30, signature, stripesmen, WEEK12",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364494503972",
+        "options": [
+          {
+            "product_id": 4364494503972,
+            "id": 5678332936228,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          },
+          {
+            "product_id": 4364494503972,
+            "id": 5678332968996,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Olive"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364494503972,
+            "id": 13518917992484,
+            "position": 1,
+            "created_at": "2019-11-15T15:18:19+05:30",
+            "updated_at": "2019-11-15T15:18:19+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16348.jpg?v=1573811299",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518917992484"
+          },
+          {
+            "product_id": 4364494503972,
+            "id": 13518918025252,
+            "position": 2,
+            "created_at": "2019-11-15T15:18:19+05:30",
+            "updated_at": "2019-11-15T15:18:19+05:30",
+            "alt": null,
+            "width": 1463,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16356.jpg?v=1573811299",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518918025252"
+          },
+          {
+            "product_id": 4364494503972,
+            "id": 13518918058020,
+            "position": 3,
+            "created_at": "2019-11-15T15:18:20+05:30",
+            "updated_at": "2019-11-15T15:18:20+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16358.jpg?v=1573811300",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518918058020"
+          },
+          {
+            "product_id": 4364494503972,
+            "id": 13518918090788,
+            "position": 4,
+            "created_at": "2019-11-15T15:18:20+05:30",
+            "updated_at": "2019-11-15T15:18:20+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16361.jpg?v=1573811300",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518918090788"
+          },
+          {
+            "product_id": 4364494503972,
+            "id": 13518918123556,
+            "position": 5,
+            "created_at": "2019-11-15T15:18:20+05:30",
+            "updated_at": "2019-11-15T15:18:20+05:30",
+            "alt": null,
+            "width": 2048,
+            "height": 1462,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16362.jpg?v=1573811300",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518918123556"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-03-30_Jake_Look_01_21718_16348.jpg?v=1573811299",
+        "price": "788.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364450856996",
+        "title": "Spike Jacket",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>The Spike Jacket by Handstich is an ideal layering piece for springtime breezes. Resistant against wind and rain, this piece is a classic comfort. Stand up collar with adjustable, hidden hood with zip closure. Elastic drawstring at waist, elastic cuffs. Mesh shoulder panels. Three front zip pockets at front, one interior pocket. Zip closure at center front. Color Dark Olive. 100% Nylon, Lining 100% Polyester. <em>Addis is wearing a Size 48.<\/em><\/p>\n<meta charset=\"utf-8\">\n<p><em><a href=\"http:\/\/babyandco.us\/collections\/handstich\">Shop our collection of Handstich.<\/a><\/em><\/p>",
+        "vendor": "Handstich",
+        "product_type": "men's coats & jackets",
+        "created_at": "2019-11-15T14:59:54+05:30",
+        "handle": "spike-jacket",
+        "updated_at": "2023-02-01T18:29:09+05:30",
+        "published_at": "2019-11-15T14:59:45+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "2\/9, coats, cross, handstich, jackets, man, newman, outerwear, SALE, ss15, visible, WEEK07",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364450856996",
+        "options": [
+          {
+            "product_id": 4364450856996,
+            "id": 5678263304228,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "48",
+              "50",
+              "52",
+              "54"
+            ]
+          },
+          {
+            "product_id": 4364450856996,
+            "id": 5678263336996,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Red\/Olive"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364450856996,
+            "id": 13518696906788,
+            "position": 1,
+            "created_at": "2019-11-15T14:59:54+05:30",
+            "updated_at": "2019-11-15T14:59:54+05:30",
+            "alt": null,
+            "width": 1463,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4048.jpg?v=1573810194",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518696906788"
+          },
+          {
+            "product_id": 4364450856996,
+            "id": 13518696939556,
+            "position": 2,
+            "created_at": "2019-11-15T14:59:54+05:30",
+            "updated_at": "2019-11-15T14:59:54+05:30",
+            "alt": null,
+            "width": 1463,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4037.jpg?v=1573810194",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518696939556"
+          },
+          {
+            "product_id": 4364450856996,
+            "id": 13518696972324,
+            "position": 3,
+            "created_at": "2019-11-15T14:59:54+05:30",
+            "updated_at": "2019-11-15T14:59:54+05:30",
+            "alt": null,
+            "width": 1463,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4052.jpg?v=1573810194",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518696972324"
+          },
+          {
+            "product_id": 4364450856996,
+            "id": 13518697005092,
+            "position": 4,
+            "created_at": "2019-11-15T14:59:54+05:30",
+            "updated_at": "2019-11-15T14:59:54+05:30",
+            "alt": null,
+            "width": 1463,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4055.jpg?v=1573810194",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518697005092"
+          },
+          {
+            "product_id": 4364450856996,
+            "id": 13518697037860,
+            "position": 5,
+            "created_at": "2019-11-15T14:59:54+05:30",
+            "updated_at": "2019-11-15T14:59:54+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4060.jpg?v=1573810194",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518697037860"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-15_Addis_Look_07_30535_4048.jpg?v=1573810194",
+        "price": "313.60",
+        "compare_at_price": ""
+      }
+    ]
+  },
+  "fixed-customisable-layout_16528674620171": {
+    "type": "fixed-customisable-layout",
+    "timestamp": "16528674620171",
+    "uniqueId": "fixed-customisable-layout_16528674620171",
+    "item_layout_type": "grid",
+    "item_in_a_row": "2",
+    "item_row": "2",
+    "no_list_item": "3",
+    "item_shape": "rounded",
+    "item_text_alignment": "left",
+    "header": "1",
+    "header_subtitle": "1",
+    "header_action": "1",
+    "item_border": "0",
+    "item_title": "1",
+    "item_price": "1",
+    "item_compare_at_price": "1",
+    "header_deal": "1",
+    "item_deal_start_date": "07\/01\/2022 12:00:24",
+    "item_deal_end_date": "04\/07\/2023 12:00:24",
+    "item_deal_format": "1day:20h:20m:20s",
+    "item_deal_message": "Offer Sale end soon!",
+    "header_title_text": "Brands under the spotlight",
+    "header_subtitle_text": "best brands for you",
+    "header_action_text": "View All",
+    "header_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_subtitle_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "header_deal_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_action_color": "{\"color\":\"#554c9b\",\"opacity\":1,\"rgbastring\":\"rgba(85, 76, 155, 1)\"}",
+    "header_action_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "item_title_color": "{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "item_price_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "item_compare_at_price_color": "{\"color\":\"#2472c1\",\"opacity\":1,\"rgbastring\":\"rgba(36, 114, 193, 1)\"}",
+    "header_title_font_weight": "medium",
+    "header_subtitle_font_weight": "light",
+    "header_action_font_weight": "medium",
+    "item_title_font_weight": "medium",
+    "item_price_font_weight": "light",
+    "item_compare_at_price_font_weight": "medium",
+    "item_header_font_style": "normal",
+    "header_subtitle_title_font_style": "normal",
+    "header_action_title_font_style": "normal",
+    "item_title_font_style": "normal",
+    "item_price_font_style": "normal",
+    "item_compare_at_price_font_style": "normal",
+    "items": [
+      {
+        "link_value": "156367650852",
+        "product_value": [
+          "4364469567524",
+          "4364313919524",
+          "4364469436452",
+          "4364528549924"
+        ]
+      }
+    ],
+    "productData": [
+      {
+        "id": "4364469567524",
+        "title": "Body Milk",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>\u00a0The Bell Top by Annette Gortz is a natural fit piece that emphasizes all the right curves.\u00a0Exposed seaming, contrast ribbed side panels. Statement zip at center front neck. Color Mare. 92% Cotton, 8% Spandex, Trim 100% Cotton. Made in Germany.\u00a0<em>Ashley is wearing a Small.<\/em><\/p>",
+        "vendor": "Annette Gortz",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:07:14+05:30",
+        "handle": "bell-top",
+        "updated_at": "2023-01-30T13:11:26+05:30",
+        "published_at": "2019-11-15T15:07:10+05:30",
+        "template_suffix": "",
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/02, annette gortz, bounty, SALE, ss15, tops, visible, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364469567524",
+        "options": [
+          {
+            "product_id": 4364469567524,
+            "id": 5678292729892,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X Large"
+            ]
+          },
+          {
+            "product_id": 4364469567524,
+            "id": 5678292762660,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Mare"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364469567524,
+            "id": 30853369167908,
+            "position": 1,
+            "created_at": "2022-12-02T14:40:45+05:30",
+            "updated_at": "2022-12-02T14:40:45+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle329.png?v=1669972245",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853369167908"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle329.png?v=1669972245",
+        "price": "243.60",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364313919524",
+        "title": "Ballet Top",
+        "body_html": "<meta charset=\"utf-8\">\n<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\" class=\"text-link\">Baby &amp; Company<\/a><\/em><\/p>\n<p>Pirouette into summer. The Ballet Top from Organic by John Patrick is highly versatile in a dreamy cotton. 3\/4 inch sleeves. Raw hemming. 100% Organic Cotton. Made in Peru.\u00a0<em>Ashley is wearing an X-Small.<\/em><\/p>",
+        "vendor": "Organic by John Patrick",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T14:04:06+05:30",
+        "handle": "3-4-sleeve-shirt",
+        "updated_at": "2023-01-30T13:10:32+05:30",
+        "published_at": "2022-02-17T16:20:58+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "arrivals, AW15, black, cotton, feather, organic, organic by john patrick, Shot 7\/2\/15, tops, white, Woman",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364313919524",
+        "options": [
+          {
+            "product_id": 4364313919524,
+            "id": 5678049361956,
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black",
+              "White"
+            ]
+          },
+          {
+            "product_id": 4364313919524,
+            "id": 5678049394724,
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Small",
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364313919524,
+            "id": 30853373132836,
+            "position": 1,
+            "created_at": "2022-12-02T14:42:19+05:30",
+            "updated_at": "2022-12-02T14:42:19+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle330_1.png?v=1669972339",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853373132836"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle330_1.png?v=1669972339",
+        "price": "78.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364469436452",
+        "title": "Bell Top",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p><span>The Bell Top from Annette Gortz is a natural fit piece that emphasizes all the right curves.\u00a0<\/span><span>Exposed seaming, contrast ribbed side panels. Statement zip at center front neck. Color Smoke. 92% Cotton, 8% Spandex, Trim 100% Cotton. Made in Germany.\u00a0<em>Ashley is wearing a Small.<\/em><\/span><\/p>",
+        "vendor": "Annette Gortz",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:07:09+05:30",
+        "handle": "bell-top-1",
+        "updated_at": "2023-02-06T17:55:16+05:30",
+        "published_at": "2019-11-15T15:07:06+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/02, annette gortz, bounty, SALE, ss15, tops, visible, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364469436452",
+        "options": [
+          {
+            "product_id": 4364469436452,
+            "id": 5678292500516,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X Large"
+            ]
+          },
+          {
+            "product_id": 4364469436452,
+            "id": 5678292533284,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Smoke"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "product_id": 4364469436452,
+            "id": 13518792556580,
+            "position": 1,
+            "created_at": "2019-11-15T15:07:09+05:30",
+            "updated_at": "2019-11-15T15:07:09+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-05_Ashley_Look_30_30124_2454.jpg?v=1573810629",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518792556580"
+          },
+          {
+            "product_id": 4364469436452,
+            "id": 13518792589348,
+            "position": 2,
+            "created_at": "2019-11-15T15:07:09+05:30",
+            "updated_at": "2019-11-15T15:07:09+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-05_Ashley_Look_30_30124_2459.jpg?v=1573810629",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13518792589348"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-02-05_Ashley_Look_30_30124_2454.jpg?v=1573810629",
+        "price": "243.60",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364528549924",
+        "title": "Drifter Top",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p><span>The Drifter Top is one's romantic essential for that weekend getaway. Covered button placket at front. Mandarin collar. Jesse Kamm.\u00a0<\/span>Color Ivory. 53% Cotton, 47% Tencel. Made in U.S.A.\u00a0<em>Ashley is wearing an X-Small.<\/em><\/p>\n<p><i>Also available in <a href=\"http:\/\/babyandco.us\/products\/drifter-top-in-seaglass\">Seaglass<\/a>.<\/i><\/p>\n<meta charset=\"utf-8\">\n<p><em><a href=\"http:\/\/babyandco.us\/collections\/jesse-kamm\">Shop our collection of Jesse Kamm.<\/a><\/em><\/p>\n<p>\u00a0<\/p>",
+        "vendor": "Jesse Kamm",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:34:47+05:30",
+        "handle": "drifter-top-in-ivory",
+        "updated_at": "2023-01-30T13:11:49+05:30",
+        "published_at": "2019-11-15T15:34:38+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/17, 6\/1one, button ups, cooloff, jesse kamm, Minimal, Minimalism, nautical, one, one6\/11, putty, SALE, shirt, sleeveless, spring5, SS15, tank, top, visible, white, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364528549924",
+        "options": [
+          {
+            "id": 5678390771748,
+            "product_id": 4364528549924,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "X-Small",
+              "Medium"
+            ]
+          },
+          {
+            "id": 5678390804516,
+            "product_id": 4364528549924,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Ivory"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 30853352292388,
+            "product_id": 4364528549924,
+            "position": 1,
+            "created_at": "2022-12-02T14:37:22+05:30",
+            "updated_at": "2022-12-02T14:37:22+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2002_1.png?v=1669972042",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853352292388"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2002_1.png?v=1669972042",
+        "price": "256.00",
+        "compare_at_price": ""
+      }
+    ]
+  },
+  "standalone-banner_16529674477790": {
+    "type": "standalone-banner",
+    "timestamp": "16529674477790",
+    "uniqueId": "standalone-banner_16529674477790",
+    "item_button_position": "no-btn",
+    "item_image_size": "original",
+    "item_text_alignment": "center",
+    "first_button_text": "",
+    "second_button_text": "",
+    "button_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "button_border_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "button_text_color": "{\"color\":\"#000000\",\"opacity\":1,\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16529674477790_11669969475.png",
+    "banner_link_type": "products",
+    "banner_link_value": "4364313919524"
+  },
+  "standalone-banner_16588293348920": {
+    "type": "standalone-banner",
+    "timestamp": "16588293348920",
+    "uniqueId": "standalone-banner_16588293348920",
+    "item_button_position": "no-btn",
+    "item_image_size": "2x",
+    "item_text_alignment": "center",
+    "first_button_text": "",
+    "second_button_text": "",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16588293348920_11669971326.png",
+    "banner_link_type": "collections",
+    "banner_link_value": "156368240676"
+  },
+  "standalone-banner_16699622042260": {
+    "type": "standalone-banner",
+    "timestamp": "16699622042260",
+    "uniqueId": "standalone-banner_16699622042260",
+    "item_button_position": "no-btn",
+    "item_image_size": "half",
+    "item_text_alignment": "center",
+    "first_button_text": "",
+    "second_button_text": "",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16699622042260_1_1669963144.png",
+    "banner_link_type": "web_url",
+    "banner_link_value": "#"
+  },
+  "standalone-banner_16699632336551": {
+    "type": "standalone-banner",
+    "timestamp": "16699632336551",
+    "uniqueId": "standalone-banner_16699632336551",
+    "item_button_position": "no-btn",
+    "item_image_size": "2x",
+    "item_text_alignment": "center",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16699632336551_11669963289.png",
+    "banner_link_type": "collections",
+    "banner_link_value": "156368568356"
+  },
+  "standalone-banner_16699637868192": {
+    "type": "standalone-banner",
+    "timestamp": "16699637868192",
+    "uniqueId": "standalone-banner_16699637868192",
+    "item_button_position": "no-btn",
+    "item_image_size": "original",
+    "item_text_alignment": "center",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16699637868192_11669963820.png",
+    "banner_link_type": "products",
+    "banner_link_value": "4364450856996"
+  },
+  "standalone-banner_16699695005583": {
+    "type": "standalone-banner",
+    "timestamp": "16699695005583",
+    "uniqueId": "standalone-banner_16699695005583",
+    "item_button_position": "no-btn",
+    "item_image_size": "3x",
+    "item_text_alignment": "center",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/standalone-banner_16699695005583_11669969542.png",
+    "banner_link_type": "collections",
+    "banner_link_value": "156367749156"
+  },
+  "product-list-slider_16699713847535": {
+    "type": "product-list-slider",
+    "timestamp": "16699713847535",
+    "uniqueId": "product-list-slider_16699713847535",
+    "item_shape": "rounded",
+    "item_alignment": "left",
+    "header": "0",
+    "header_subtitle": "0",
+    "header_action": "0",
+    "item_border": "0",
+    "item_title": "1",
+    "item_price": "1",
+    "item_compare_at_price": "1",
+    "header_deal": "0",
+    "item_deal_start_date": "12\/02\/2022 10:12:56",
+    "item_deal_end_date": "12\/31\/2022 10:12:56",
+    "item_deal_format": "1day:20h:20m:20s",
+    "item_deal_message": "Offer Sale end soon!",
+    "header_action_text": "",
+    "header_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color": "{\"color\":\"#000000\",\"opacity\":1,\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "header_subtitle_color": "{\"color\":\"#838487\",\"opacity\":1,\"rgbastring\":\"rgba(131, 132, 135, 1)\"}",
+    "header_deal_color": "{\"color\":\"#b0aeae\",\"opacity\":1,\"rgbastring\":\"rgba(176, 174, 174, 1)\"}",
+    "header_action_color": "{\"color\":\"#554c9b\",\"opacity\":1,\"rgbastring\":\"rgba(85, 76, 155, 1)\"}",
+    "header_action_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color": "{\"color\":\"#f2f2f2\",\"opacity\":1,\"rgbastring\":\"rgba(242, 242, 242, 1)\"}",
+    "item_title_color": "{\"color\":\"#000000\",\"opacity\":1,\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "item_price_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "item_compare_at_price_color": "{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "item_header_font_weight": "light",
+    "header_subtitle_font_weight": "light",
+    "header_action_font_weight": "medium",
+    "item_title_font_weight": "light",
+    "item_price_font_weight": "light",
+    "item_compare_at_price_font_weight": "light",
+    "item_header_font_style": "normal",
+    "header_subtitle_title_font_style": "normal",
+    "header_action_font_style": "normal",
+    "item_title_font_style": "normal",
+    "item_price_font_style": "normal",
+    "item_compare_at_price_font_style": "normal",
+    "item_total": "4",
+    "item_value": [
+      "4364528549924",
+      "4364527829028",
+      "4364526485540",
+      "4364525338660"
+    ],
+    "productData": [
+      {
+        "id": "4364528549924",
+        "title": "Drifter Top",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p><span>The Drifter Top is one's romantic essential for that weekend getaway. Covered button placket at front. Mandarin collar. Jesse Kamm.\u00a0<\/span>Color Ivory. 53% Cotton, 47% Tencel. Made in U.S.A.\u00a0<em>Ashley is wearing an X-Small.<\/em><\/p>\n<p><i>Also available in <a href=\"http:\/\/babyandco.us\/products\/drifter-top-in-seaglass\">Seaglass<\/a>.<\/i><\/p>\n<meta charset=\"utf-8\">\n<p><em><a href=\"http:\/\/babyandco.us\/collections\/jesse-kamm\">Shop our collection of Jesse Kamm.<\/a><\/em><\/p>\n<p>\u00a0<\/p>",
+        "vendor": "Jesse Kamm",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:34:47+05:30",
+        "handle": "drifter-top-in-ivory",
+        "updated_at": "2023-01-30T13:11:49+05:30",
+        "published_at": "2019-11-15T15:34:38+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/17, 6\/1one, button ups, cooloff, jesse kamm, Minimal, Minimalism, nautical, one, one6\/11, putty, SALE, shirt, sleeveless, spring5, SS15, tank, top, visible, white, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364528549924",
+        "options": [
+          {
+            "id": 5678390771748,
+            "product_id": 4364528549924,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "X-Small",
+              "Medium"
+            ]
+          },
+          {
+            "id": 5678390804516,
+            "product_id": 4364528549924,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Ivory"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 30853352292388,
+            "product_id": 4364528549924,
+            "position": 1,
+            "created_at": "2022-12-02T14:37:22+05:30",
+            "updated_at": "2022-12-02T14:37:22+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2002_1.png?v=1669972042",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853352292388"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2002_1.png?v=1669972042",
+        "price": "256.00",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364527829028",
+        "title": "ACB Top",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>\u00a0Spring forward with glorious enthusiasm for summer with Jesse Kamm's ACB Top.\u00a0The line is charming and easy, with hints of nautical inspiration.\u00a0Open back with V. Button placket closure at center back. Color Brick. 45% Tencel, 40% Cotton, 15% Flax. Made in U.S.A.\u00a0<em>Ashley is wearing an X-Small.<\/em><\/p>",
+        "vendor": "Jesse Kamm",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:34:18+05:30",
+        "handle": "acb-top-in-chipped-brick",
+        "updated_at": "2023-01-30T13:11:48+05:30",
+        "published_at": "2022-02-17T16:22:34+05:30",
+        "template_suffix": "",
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/17, full moon, jesse kamm, Minimal, Minimalism, new arrivals, pink, putty, red, SALE, salefave3, spring3, spring5, SS15, tops, visible, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364527829028",
+        "options": [
+          {
+            "id": 5678389624868,
+            "product_id": 4364527829028,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "X-Small",
+              "Small"
+            ]
+          },
+          {
+            "id": 5678389657636,
+            "product_id": 4364527829028,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Brick"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 30853363105828,
+            "product_id": 4364527829028,
+            "position": 1,
+            "created_at": "2022-12-02T14:38:36+05:30",
+            "updated_at": "2022-12-02T14:38:36+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2003.png?v=1669972116",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853363105828"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle2003.png?v=1669972116",
+        "price": "278.60",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364526485540",
+        "title": "Imperial Tunic",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p><span data-sheets-value='[null,2,\"A painters smock with a little extra length allowing it to be worn as a dress. Pin tucks at the collar stretch out into an easy volume that can be tied up with cotton trim at the center front. Color Brown. 100% Cotton.\"]' data-sheets-userformat=\"[null,null,8961,[null,0],null,null,null,null,null,null,null,1,0,null,null,null,8]\">A painters smock with a little extra length allowing it to be worn as a dress. Pin tucks at the collar stretch out into an easy volume that can be tied up with cotton trim at the center front. Jesse Kamm. Color White. 100% Cotton.\u00a0<\/span>Made in U.S.A.\u00a0<em>Ashley is wearing an X-Small.<\/em>\u00a0<\/p>",
+        "vendor": "Jesse Kamm",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:33:40+05:30",
+        "handle": "imperial-tunic-in-white",
+        "updated_at": "2023-01-30T13:11:48+05:30",
+        "published_at": "2019-11-15T15:33:37+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "02\/17, cooloff, cross sell, jesse kamm, Minimal, Minimalism, nautical, new, publish, SALE, spring3, spring4, spring5, spring6, SS15, tops, tunics, visible, white, woman, womens",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364526485540",
+        "options": [
+          {
+            "id": 5678387429412,
+            "product_id": 4364526485540,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "X-Small",
+              "Medium"
+            ]
+          },
+          {
+            "id": 5678387462180,
+            "product_id": 4364526485540,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "White"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 30853364809764,
+            "product_id": 4364526485540,
+            "position": 1,
+            "created_at": "2022-12-02T14:39:19+05:30",
+            "updated_at": "2022-12-02T14:39:19+05:30",
+            "alt": null,
+            "width": 390,
+            "height": 522,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1980_1.png?v=1669972159",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/30853364809764"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/Rectangle1980_1.png?v=1669972159",
+        "price": "362.60",
+        "compare_at_price": ""
+      },
+      {
+        "id": "4364525338660",
+        "title": "Pat Raglan Tee",
+        "body_html": "<p><em>This is a demonstration store. You can purchase products like this from <a href=\"http:\/\/babyandco.us\/\" target=\"_blank\">Baby &amp; Company<\/a><\/em><\/p><p>The softened color palette invokes feelings of a childhood summer, now long lost, but the memories remain. The Pat is tropical surrealism for your wearing pleasure. Raglan sleeves. Just in Case. Color Print.\u00a070% Polyester, 30% Cotton.\u00a0<em>\ufeffFrench Sizing.\u00a0<\/em><em>Lana is wearing a Small.<\/em><\/p>\n<p><span style=\"text-decoration: underline;\"><a href=\"http:\/\/babyandco.us\/collections\/just-in-case\"><em>Shop our collection of Just in Case.<\/em><\/a><\/span><\/p>",
+        "vendor": "Just in Case",
+        "product_type": "women's tops",
+        "created_at": "2019-11-15T15:32:47+05:30",
+        "handle": "pat-sweater-in-print",
+        "updated_at": "2023-01-30T13:11:47+05:30",
+        "published_at": "2019-11-15T15:32:42+05:30",
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "beach, just in case, palm tree, palms, print, SALE, Shot 4\/19, spring7, SS15, top, tops, woman",
+        "admin_graphql_api_id": "gid:\/\/shopify\/Product\/4364525338660",
+        "options": [
+          {
+            "id": 5678385791012,
+            "product_id": 4364525338660,
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          },
+          {
+            "id": 5678385823780,
+            "product_id": 4364525338660,
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Beach Print"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 13519051325476,
+            "product_id": 4364525338660,
+            "position": 1,
+            "created_at": "2019-11-15T15:32:47+05:30",
+            "updated_at": "2019-11-15T15:32:47+05:30",
+            "alt": null,
+            "width": 1066,
+            "height": 1493,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-04-19_LANA_LOOK1_patshirt_20563_00078cce-c3f7-4940-81f3-7a5423c9ad05.jpg?v=1573812167",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13519051325476"
+          },
+          {
+            "id": 13519051358244,
+            "product_id": 4364525338660,
+            "position": 2,
+            "created_at": "2019-11-15T15:32:47+05:30",
+            "updated_at": "2019-11-15T15:32:47+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-04-19_LANA_LOOK1_patshirt_20550.jpg?v=1573812167",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13519051358244"
+          },
+          {
+            "id": 13519051391012,
+            "product_id": 4364525338660,
+            "position": 3,
+            "created_at": "2019-11-15T15:32:47+05:30",
+            "updated_at": "2019-11-15T15:32:47+05:30",
+            "alt": null,
+            "width": 1056,
+            "height": 1479,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-04-19_LANA_LOOK1_patshirt_20571_a73ee2ff-b180-4e78-86d6-c5b4400a31f6.jpg?v=1573812167",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13519051391012"
+          },
+          {
+            "id": 13519051456548,
+            "product_id": 4364525338660,
+            "position": 4,
+            "created_at": "2019-11-15T15:32:47+05:30",
+            "updated_at": "2019-11-15T15:32:47+05:30",
+            "alt": null,
+            "width": 1462,
+            "height": 2048,
+            "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-04-19_LANA_LOOK1_patshirt_20566.jpg?v=1573812167",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/13519051456548"
+          }
+        ],
+        "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2280\/6971\/products\/2015-04-19_LANA_LOOK1_patshirt_20563_00078cce-c3f7-4940-81f3-7a5423c9ad05.jpg?v=1573812167",
+        "price": "110.60",
+        "compare_at_price": ""
+      }
+    ]
+  }
+}

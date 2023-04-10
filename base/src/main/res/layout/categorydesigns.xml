@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/review_card_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/corner_radius_10"
+        app:cardElevation="@dimen/elevation_5"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rpickupsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/checks"
+                android:layout_width="@dimen/width_20"
+                android:layout_height="@dimen/height_20"
+                android:layout_marginStart="@dimen/margin_start_2"
+                android:layout_marginTop="@dimen/margin_top_7" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/rheading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_20"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_toEndOf="@+id/checks"
+                android:paddingStart="@dimen/margin_start_3"
+                android:paddingEnd="@dimen/margin_end_3"
+                app:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/raddfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rheading"
+                android:layout_marginTop="@dimen/margin_top_3"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/padding_top_3"
+                android:paddingEnd="@dimen/padding_end_10"
+                android:paddingBottom="@dimen/padding_bottom_3"
+                app:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/raddsecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raddfirst"
+                android:layout_marginTop="@dimen/margin_top_3"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/padding_top_3"
+                android:paddingEnd="@dimen/padding_end_10"
+                android:paddingBottom="@dimen/padding_bottom_3"
+                app:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/rpickuptime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raddsecond"
+                android:layout_marginTop="@dimen/margin_top_3"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/padding_top_3"
+                android:paddingEnd="@dimen/padding_end_10"
+                android:paddingBottom="@dimen/padding_bottom_3"
+                app:texttype="bold" />
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/rphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rpickuptime"
+                android:layout_marginTop="@dimen/margin_top_3"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/padding_top_3"
+                android:paddingEnd="@dimen/padding_end_10"
+                android:paddingBottom="@dimen/padding_bottom_3"
+                app:texttype="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/variantheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/variantheading"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:visibility="visible"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:texttype="normalgrey1txt16sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/variant_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@id/variantheading" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/variant_available_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            bind:layout_constraintTop_toBottomOf="@+id/variant_container"
+            bind:texttype="normal" />
+
+        <com.rasmishopping.app.customviews.MageNativeButton
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="done"
+            app:buttontype="normal"
+            android:id="@+id/done"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/variant_available_qty"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shopify.returnprime">
+    <dist:module dist:title="@string/module_returnprime">
+        <dist:delivery>
+            <dist:on-demand/>
+        </dist:delivery>
+        <dist:fusing dist:include="false" />
+    </dist:module>
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".LoadPrime"
+           >
+        </activity>
+        <activity
+            android:name=".ShipwayTrack"
+            >
+        </activity>
+    </application>
+
+
+</manifest>

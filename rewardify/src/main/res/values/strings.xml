@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">rewardify</string>
+    <string name="active_discount_codes">Active Discount Codes</string>
+    <string name="total_amount">Total amount</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="show_all_discount_code">Show All Discount Code</string>
+    <string name="generate_discount_code">Generate Discount Code</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_memo">Enter Memo</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="amount">Amount</string>
+    <string name="open_balance">Open Balance</string>
+    <string name="type">Type</string>
+    <string name="effective_date">Effective Date</string>
+    <string name="id">ID</string>
+    <string name="revert_discount_code">Revert Discount Code</string>
+    <string name="nodiscount_txt">No Active Discounts Available</string>
+</resources>

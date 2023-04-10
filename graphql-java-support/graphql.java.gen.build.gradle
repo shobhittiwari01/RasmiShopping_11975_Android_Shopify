@@ -1,0 +1,121 @@
+def VERSION_NAME = '0.2.1'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    testImplementation 'junit:junit:4.12'
+}
+
+compileJava {
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+}
+
+compileTestJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+ext {
+    publishedGroupId = 'com.shopify.graphql.support'
+    artifact = 'support'
+    libraryName = 'graphql-support'
+
+    libraryDescription = 'GraphQL support package generated client code'
+
+    siteUrl = 'https://github.com/Shopify/graphql_java_gen'
+    gitUrl = 'https://github.com/Shopify/graphql_java_gen.git'
+
+    licenseName = 'The MIT License'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+
+    author = 'Shopify Inc.'
+}
+
+group = publishedGroupId
+archivesBaseName = artifact
+version = VERSION_NAME
+
+signing {
+    required { gradle.taskGraph.hasTask("uploadArchives") }
+    def signingKeyId = findProperty("signingKeyId")
+    def signingKey = findProperty("signingKey")
+    def signingPassword = findProperty("signingPassword")
+    useInMemoryPgpKeys(signingKeyId, signingKey, signingPassword)
+    sign configurations.archives
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: System.getenv("OSSRH_USERNAME"), password: System.getenv("OSSRH_PASSWORD"))
+            }
+
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: System.getenv("OSSRH_USERNAME"), password: System.getenv("OSSRH_PASSWORD"))
+            }
+
+            pom {
+                project {
+                    groupId project.ext.publishedGroupId
+                    artifactId project.ext.artifact
+
+                    name project.ext.libraryName
+                    description project.ext.libraryDescription
+                    url project.ext.siteUrl
+
+                    developers {
+                        developer {
+                            name project.ext.author
+                        }
+                    }
+
+                    licenses {
+                        license {
+                        name project.ext.licenseName
+                        url project.ext.licenseUrl
+                        }
+                    }
+
+                    scm {
+                        connection = project.ext.gitUrl
+                        developerConnection = project.ext.gitUrl
+                        url = project.ext.siteUrl
+                    }
+                }
+            }
+        }
+    }
+}

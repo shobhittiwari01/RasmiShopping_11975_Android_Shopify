@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="features"
+            type="com.rasmishopping.app.basesection.models.FeaturesModel" />
+        <variable
+            name="productdata"
+            type="com.rasmishopping.app.basesection.models.ListData" />
+        <variable
+            name="clickhandlers"
+            type="com.rasmishopping.app.productsection.activities.ProductView.ClickHandlers" />
+        <variable
+            name="arImagesList"
+            type="java.util.ArrayList" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/shimmer_layout_product_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainparentsection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/mainsection"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                bind:layout_constraintBottom_toTopOf="@+id/bottomsection"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="WebViewLayout">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/images"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        bind:layout_constraintDimensionRatio="375:500"
+                        bind:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aricon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="@{view->clickhandlers.showAR(view,productdata)}"
+                        android:src="@drawable/ar_icon"
+                        android:visibility="gone"
+                        bind:layout_constraintEnd_toEndOf="parent"
+                        bind:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/sizeChartSection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:onClick="@{view->clickhandlers.showSizeChart(view,productdata)}"
+                        android:src="@drawable/sizeicon"
+                        android:visibility="gone"
+                        bind:layout_constraintBottom_toBottomOf="@+id/images"
+                        bind:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/shareicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shareicon"
+                        android:onClick="@{view->clickhandlers.shareProduct(view,productdata)}"
+                        android:visibility="gone"
+                        bind:layout_constraintBottom_toBottomOf="@+id/images"
+                        bind:layout_constraintEnd_toEndOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/threesixtyview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/threesixtyicon"
+                        android:onClick="@{view->clickhandlers.shareProduct(view,productdata)}"
+                        android:visibility="gone"
+                        bind:layout_constraintBottom_toBottomOf="@+id/images"
+                        bind:layout_constraintEnd_toStartOf="@+id/shareicon" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/indicatorsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/indicatorback"
+                        bind:layout_constraintEnd_toEndOf="parent"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/images">
+
+                        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:dotsColor="@color/dotscolor"
+                            app:dotsCornerRadius="8dp"
+                            app:dotsSize="8dp"
+                            app:dotsSpacing="@dimen/dost_spacing_4"
+                            app:dotsStrokeColor="@color/strokecolor"
+                            app:dotsStrokeWidth="@dimen/stroke_width_1"
+                            bind:layout_constraintBottom_toBottomOf="parent"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/secondsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/indicatorsection">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="start|center_vertical"
+                            android:text="@{productdata.textdata}"
+                            android:textAlignment="viewStart"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:texttype="productname" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/specialprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start|center_vertical"
+                            android:text="@{productdata.specialprice}"
+                            android:textAlignment="viewStart"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/name"
+                            bind:texttype="productnamespecial" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/regularprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@{productdata.regularprice}"
+                            app:layout_goneMarginStart="15dp"
+                            bind:layout_constraintStart_toEndOf="@id/specialprice"
+                            bind:layout_constraintTop_toBottomOf="@id/name"
+                            bind:texttype="productnamenormal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/offertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@{productdata.offertext}"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="@+id/specialprice"
+                            bind:layout_constraintStart_toEndOf="@id/regularprice"
+                            bind:layout_constraintTop_toTopOf="@id/specialprice"
+                            bind:texttype="greentxt" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/review_card"
+                            android:layout_width="90dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="8dp"
+
+                            android:background="@drawable/backround"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintTop_toTopOf="@id/regularprice">
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/ratingvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="4.3"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                bind:layout_constraintStart_toStartOf="parent"
+                                bind:texttype="productviewrating" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/total_review"
+                                app:layout_constraintStart_toEndOf="@+id/ratingvalue"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_goneMarginStart="5dp"
+                                app:srcCompat="@drawable/ic_star_rating"
+                                bind:texttype="ratingvalue" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/divider"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="8dp"
+                                android:background="@color/normalgrey3text"
+                                android:text="80"
+                                app:layout_constraintBottom_toBottomOf="@+id/total_review"
+                                app:layout_constraintStart_toEndOf="@+id/star"
+                                app:layout_constraintTop_toTopOf="parent"
+                                bind:texttype="ratingvalue" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/total_review"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:text="80"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                bind:layout_constraintStart_toEndOf="@+id/divider"
+                                bind:texttype="productviewrating" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/selectedvariant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_15"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@+id/secondsection"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:texttype="normalgrey1txt" />
+
+                    <View
+                        android:id="@+id/dividerone"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="@dimen/margin_top_5"
+                        android:background="@color/divider"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/selectedvariant" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/variant_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/dividerone" />
+
+                    <Button
+                        android:id="@+id/select_variant_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/white"
+                        android:paddingEnd="10dp"
+                        android:text="@string/selectvariantpage"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:visibility="gone"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/variant_container" />
+
+                    <View
+                        android:id="@+id/dividertwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="@dimen/margin_top_5"
+                        android:background="@color/divider"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/select_variant_page" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/desc_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dividertwo">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/description_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            app:layout_constraintHorizontal_weight="0.8"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/chatgpt"
+                            app:layout_constraintBottom_toTopOf="@+id/detailssection"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/productinfo"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:texttype="varianttittle" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/chatgpt"
+                            app:layout_constraintHorizontal_weight="0.2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toTopOf="@+id/detailssection"
+                            app:layout_constraintStart_toEndOf="@+id/description_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/chatgpt_icon"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/chatgptdescriptioncontainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            android:outlineSpotShadowColor="@color/black"
+                            android:outlineAmbientShadowColor="@color/black"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="5dp"
+                            app:layout_constraintTop_toBottomOf="@id/chatgpt"
+                           >
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/chatgptcontainer"
+                                >
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/shortdescriptionicon"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:layout_marginStart="15dp"
+                                    android:src="@drawable/shortdesc"/>
+                                <com.rasmishopping.app.customviews.MageNativeTextView
+                                    android:id="@+id/shortdescriptionheading"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_marginTop="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/shortdescriptionicon"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:text="@string/shortdes"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:texttype="shortdescriptionheading" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:id="@+id/chatgptbreak"
+                                    android:background="@color/lightgray"
+                                    android:layout_marginTop="15dp"
+                                    app:layout_constraintTop_toBottomOf="@+id/shortdescriptionheading"/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/chatgptdescriptionicon"
+                                    app:layout_constraintTop_toBottomOf="@id/chatgptbreak"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:layout_marginStart="15dp"
+                                    android:src="@drawable/chatgpt_icon"/>
+                                <com.rasmishopping.app.customviews.MageNativeTextView
+                                    android:id="@+id/chatgptdescription"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/shortdescriptionicon"
+                                    app:layout_constraintTop_toBottomOf="@id/chatgptbreak"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:layout_marginBottom="5dp"
+                                    app:texttype="shortdescriptionheading" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/detailssection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/descround"
+                            app:layout_constraintTop_toBottomOf="@id/description_title">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/parentsection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.rasmishopping.app.customviews.MageNativeTextView
+                                    android:id="@+id/product_info"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_weight="0.9"
+                                    android:gravity="start|center_vertical"
+                                    android:text="@string/productdetail"
+                                    android:textAlignment="viewStart"
+                                    app:texttype="menutext" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/expand_collapse"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:tag="nonexpand"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ic_up" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/parentsection"
+                                bind:texttype="menutext" />
+                            <WebView
+                                android:id="@+id/descriptionwebview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@color/white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/parentsection"
+                                bind:texttype="menutext" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <View
+                            android:id="@+id/spacer"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/divider"
+                            bind:layout_constraintTop_toBottomOf="@+id/detailssection" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/backinstock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_10"
+                        android:layout_marginTop="@dimen/margin_top_10"
+                        android:layout_marginEnd="@dimen/margin_end_10"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/desc_section">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/instockheading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_25"
+                            android:layout_marginStart="@dimen/margin_top_5"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingStart="3dp"
+                            android:paddingEnd="3dp"
+                            android:text="@string/backstock"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toTopOf="parent"
+                            bind:texttype="varianttittle" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/emailsection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:orientation="horizontal"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/instockheading">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/backstockemail"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/height_40"
+                                android:layout_marginTop="@dimen/margin_top_5"
+                                android:background="@drawable/round_corner_lightgray"
+                                android:hint="@string/enteremail"
+                                android:paddingStart="@dimen/padding_start_8"
+                                android:paddingEnd="3dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/customgrey"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@id/emailbutton"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.rasmishopping.app.customviews.MageNativeButton
+                                android:id="@+id/emailbutton"
+                                android:layout_width="@dimen/width_100"
+                                android:layout_height="@dimen/height_40"
+                                android:layout_marginStart="@dimen/margin_start_5"
+                                android:layout_marginTop="@dimen/margin_top_5"
+                                android:layout_marginEnd="3dp"
+                                android:background="@drawable/descround"
+                                android:text="@string/notifyme"
+                                app:buttontype="normal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/backstockemail"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/divider"
+                            bind:layout_constraintTop_toBottomOf="@+id/emailsection" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/subscriptionsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@+id/backinstock">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/subscribe_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/subscribe_text"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:texttype="varianttittle" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/subscribtion_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/subscribe_text"
+                            tools:listitem="@layout/groups_layout" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/group_offer_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/subscribtion_group"
+                            tools:listitem="@layout/group_swatches" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/subscribesection"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="15dp"
+                            android:background="@color/subscribeback"
+
+                            android:visibility="gone"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/group_offer_recycler">
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/offer_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                bind:layout_constraintBottom_toBottomOf="parent"
+                                bind:layout_constraintStart_toStartOf="parent"
+                                bind:layout_constraintTop_toTopOf="parent"
+                                bind:texttype="subscribediscount" />
+
+                            <com.rasmishopping.app.customviews.MageNativeButton
+                                android:id="@+id/subscribe_btn"
+                                android:layout_width="@dimen/width_163"
+                                android:layout_height="@dimen/height_48"
+                                android:layout_marginEnd="8dp"
+                                android:text="@string/plan"
+                                app:buttontype="revertroundedcorner"
+                                bind:layout_constraintBottom_toBottomOf="parent"
+                                bind:layout_constraintEnd_toEndOf="parent"
+                                bind:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <RadioGroup
+                            android:id="@+id/subscriptiongroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/subscribesection" />
+
+                        <View
+                            android:id="@+id/spacer_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/divider"
+                            bind:layout_constraintTop_toBottomOf="@+id/subscriptiongroup" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personalisedsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/subscriptionsection">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/personalisedyext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/similarproducts"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:texttype="varianttittle" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/personalised"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintBottom_toTopOf="@+id/line1"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/personalisedyext" />
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/divider"
+                            bind:layout_constraintTop_toBottomOf="@+id/personalised" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/yotpo_write_review_but"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_30"
+                        android:padding="@dimen/padding_8"
+                        android:text="@string/yotpo_rate_product"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="@dimen/text_size_14"
+                        android:visibility="gone"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@+id/personalisedsection"
+                        bind:texttype="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/yotporeviewsection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        bind:layout_constraintTop_toBottomOf="@id/yotpo_write_review_but">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/yotpo_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/margin_top_20"
+                            android:text="@string/please_select_rating"
+                            android:textColor="@color/black"
+                            bind:texttype="normal" />
+
+                        <RatingBar
+                            android:id="@+id/yotpo_rating_bar"
+                            style="@style/Widget.AppCompat.RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/yotpo_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/margin_top_10"
+                            android:progressBackgroundTint="@color/gray_color"
+                            android:progressTint="@color/appTheme" />
+
+                        <com.rasmishopping.app.customviews.MageNativeEditText
+                            android:id="@+id/yotpo_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_50"
+                            android:layout_below="@id/yotpo_rating_bar"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/margin_5"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/name"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="15sp"
+                            app:edittype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeEditText
+                            android:id="@+id/yotpo_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_50"
+                            android:layout_below="@id/yotpo_name"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/margin_5"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/email"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_size_15"
+                            app:edittype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeEditText
+                            android:id="@+id/yotpo_reviewtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_50"
+                            android:layout_below="@id/yotpo_email"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/margin_5"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/review_ttile"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_size_15"
+                            app:edittype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeEditText
+                            android:id="@+id/yotpo_reviewbody"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_150"
+                            android:layout_below="@id/yotpo_reviewtitle"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/margin_5"
+                            android:background="@drawable/edit_border"
+                            android:gravity="top|start"
+                            android:hint="@string/write_your_review_here"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_size_16"
+                            app:edittype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeButton
+                            android:id="@+id/yotpo_submitreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_50"
+                            android:layout_below="@id/yotpo_reviewbody"
+                            android:layout_margin="@dimen/margin_10"
+                            android:background="@drawable/buy_border1"
+                            android:text="@string/submit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15"
+                            app:buttontype="filtenormal" />
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/review_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_10"
+                        android:background="@color/white"
+                        android:visibility="@{features.productReview == true ? View.VISIBLE : View.GONE}"
+                        bind:layout_constraintTop_toBottomOf="@+id/yotporeviewsection">
+
+                        <View
+                            android:id="@+id/reviewlistdiv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_10"
+                            android:background="@color/lightgray"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toTopOf="parent" />
+
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/ratting_review_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:text="@string/customer_review"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/reviewlistdiv"
+                            bind:texttype="bold" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/no_reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sorry_this_product_does_not_have_any_reviews"
+                            android:textSize="@dimen/text_size_12"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/ratting_review_title"
+                            bind:texttype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/view_all_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_end_15"
+                            android:onClick="@{view->clickhandlers.viewAllReview(view)}"
+                            android:text="@string/view_all"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/no_reviews"
+                            bind:texttype="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/review_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="@dimen/margin_start_12"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:layout_marginEnd="@dimen/margin_end_12"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view_all_but" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/rate_product_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:onClick="@{(view) -> clickhandlers.rateProduct(view,productdata)}"
+                            android:padding="8dp"
+                            android:text="@string/rate_product"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/review_list"
+                            bind:texttype="bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/judgeme_review_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_10"
+                        android:background="@color/white"
+                        android:visibility="@{features.judgemeProductReview == true ? View.VISIBLE : View.GONE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@+id/review_section">
+
+                        <View
+                            android:id="@+id/judgemereviewlistdiv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_10"
+                            android:background="@color/lightgray"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toTopOf="parent" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/judgeme_ratting_review_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:text="@string/customer_review"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/judgemereviewlistdiv"
+                            bind:texttype="bold" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/judgeme_no_reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sorry_this_product_does_not_have_any_reviews"
+                            android:textSize="@dimen/text_size_12"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/judgeme_ratting_review_title"
+                            bind:texttype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/judgeme_view_all_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_end_15"
+                            android:onClick="@{view->clickhandlers.viewAllJudgeMeReview(view)}"
+                            android:text="@string/view_all"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/judgeme_no_reviews"
+                            bind:texttype="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/judgeme_review_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="@dimen/margin_start_12"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:layout_marginEnd="@dimen/margin_end_12"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/judgeme_view_all_but" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/judgeme_rate_product_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:onClick="@{(view) -> clickhandlers.rateProductJudgeMe(view,productdata)}"
+                            android:padding="8dp"
+                            android:text="@string/rate_product"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/judgeme_review_list"
+                            bind:texttype="bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ali_review_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:visibility="@{features.aliReviews == true ? View.VISIBLE : View.GONE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@+id/judgeme_review_section">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/ali_ratting_review_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:text="@string/ratings_reviews"
+                            app:layout_constraintTop_toTopOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:texttype="bold" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/ali_no_reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sorry_this_product_does_not_have_any_reviews"
+                            android:textSize="@dimen/text_size_12"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/ali_ratting_review_title"
+                            bind:texttype="normal" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/ali_view_all_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_end_15"
+                            android:onClick="@{view->clickhandlers.viewAllAliReview(view)}"
+                            android:text="@string/view_all"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            bind:layout_constraintEnd_toEndOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/ali_no_reviews"
+                            bind:texttype="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/ali_review_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="@dimen/margin_start_12"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:layout_marginEnd="@dimen/margin_end_12"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ali_view_all_but" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/ali_rate_product_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_15"
+                            android:layout_marginTop="@dimen/margin_top_5"
+                            android:onClick="@{(view) -> clickhandlers.rateProductJudgeMe(view,productdata)}"
+                            android:padding="8dp"
+                            android:text="@string/rate_product"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/text_size_14"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@+id/ali_review_list"
+                            bind:texttype="bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/shopifyrecommended_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ali_review_section">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/shopifyrecommended_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/you_may_also_like"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:texttype="varianttittle" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/shopifyrecommended_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/line2"
+                            bind:layout_constraintStart_toStartOf="parent"
+                            bind:layout_constraintTop_toBottomOf="@id/shopifyrecommended_title" />
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/divider"
+                            bind:layout_constraintTop_toBottomOf="@+id/shopifyrecommended_list" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        bind:cardCornerRadius="@dimen/card_radius_8"
+                        bind:cardUseCompatPadding="true"
+                        bind:layout_constraintDimensionRatio="H,1:1.6"
+                        bind:layout_constraintTop_toBottomOf="@id/shopifyrecommended_section">
+
+                        <RelativeLayout
+                            android:id="@+id/pickupsection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/checks"
+                                android:layout_width="@dimen/width_20"
+                                android:layout_height="@dimen/height_20"
+                                android:layout_marginStart="@dimen/margin_start_5"
+                                android:layout_marginTop="@dimen/margin_top_7" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_20"
+                                android:layout_marginTop="@dimen/margin_top_5"
+                                android:layout_toEndOf="@+id/checks"
+                                android:paddingStart="@dimen/padding_start_3"
+                                android:paddingEnd="@dimen/padding_end_3"
+                                bind:texttype="bold" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/addfirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/heading"
+                                android:layout_marginTop="@dimen/margin_top_3"
+                                android:paddingStart="@dimen/padding_start_10"
+                                android:paddingTop="@dimen/padding_top_3"
+                                android:paddingEnd="@dimen/padding_end_10"
+                                android:paddingBottom="@dimen/padding_bottom_3"
+                                bind:texttype="bold" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/addsecond"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/addfirst"
+                                android:layout_marginTop="@dimen/margin_top_3"
+                                android:paddingStart="@dimen/padding_start_10"
+                                android:paddingTop="@dimen/padding_top_3"
+                                android:paddingEnd="@dimen/padding_end_10"
+                                android:paddingBottom="@dimen/padding_bottom_3"
+                                bind:texttype="bold" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/pickuptime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/addsecond"
+                                android:layout_marginTop="@dimen/margin_top_3"
+                                android:paddingStart="@dimen/padding_start_10"
+                                android:paddingTop="@dimen/padding_top_3"
+                                android:paddingEnd="@dimen/padding_end_10"
+                                android:paddingBottom="@dimen/padding_bottom_3"
+                                bind:texttype="bold" />
+
+                            <com.rasmishopping.app.customviews.MageNativeTextView
+                                android:id="@+id/phonenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pickuptime"
+                                android:layout_marginTop="@dimen/margin_top_3"
+                                android:paddingStart="@dimen/padding_start_10"
+                                android:paddingTop="@dimen/padding_top_3"
+                                android:paddingEnd="@dimen/padding_end_10"
+                                android:paddingBottom="@dimen/padding_bottom_3"
+                                bind:texttype="bold" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/checkstoretext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_5"
+                        android:layout_marginTop="@dimen/margin_top_3"
+                        android:text="@string/checkstores"
+                        android:visibility="gone"
+                        bind:layout_constraintTop_toBottomOf="@id/card"
+                        bind:texttype="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/storerecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_top_5"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        bind:layout_constraintTop_toBottomOf="@id/checkstoretext" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/quantitylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:layout_constraintBottom_toTopOf="@+id/bottomsection"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent">
+
+                <include layout="@layout/dialog_quantity" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomsection"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                bind:layout_constraintBottom_toBottomOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/mainsection">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wishlistsection"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/wishlist_round"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> clickhandlers.addtoWish(view,productdata)}"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/cartsection"
+                    app:layout_constraintHorizontal_weight=".15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/wishdisable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wishlist_disable"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/wishenable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/ic_heart_product"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                    <include-->
+                    <!--                        android:id="@+id/wishanimation"-->
+                    <!--                        layout="@layout/wishlist_animation"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                    />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cartsection"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/newcartround"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> clickhandlers.addtoCart(view,productdata)}"
+                    android:orientation="horizontal"
+                    app:layout_constraintHorizontal_weight=".45"
+                    app:layout_goneMarginStart="8dp"
+                    bind:layout_constraintEnd_toStartOf="@+id/buynowsection"
+                    bind:layout_constraintStart_toEndOf="@+id/wishlistsection"
+                    bind:layout_constraintTop_toTopOf="parent">
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/addtocart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addtocart"
+                        bind:texttype="newcarttext" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/buynowsection"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/round"
+                    android:onClick="@{(view) -> clickhandlers.buynow(view,productdata)}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight=".45"
+                    app:layout_constraintStart_toEndOf="@+id/cartsection">
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/buynow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/buynow"
+                        bind:texttype="carttextt" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

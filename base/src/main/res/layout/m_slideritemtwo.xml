@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+
+        <variable
+            name="listdata"
+            type="com.rasmishopping.app.basesection.models.ListData" />
+
+        <variable
+            name="clickproduct"
+            type="com.rasmishopping.app.homesection.adapters.ProductSliderAdapter.Product" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="@dimen/width_160"
+        android:layout_height="@dimen/height_260"
+        android:layout_margin="@dimen/margin_2"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/corner_radius_2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="@dimen/width_160"
+            android:layout_height="@dimen/height_260"
+            android:layout_margin="@dimen/margin_3"
+            android:background="@color/white"
+            android:onClick="@{(view) -> clickproduct.productClick(view,listdata)}">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/image"
+                app:layout_constraintBottom_toTopOf="@id/nameandpricesection"
+                app:layout_constraintDimensionRatio="H,1:1.2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:imageUrl="@{commondata.imageurl}" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nameandpricesection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image">
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_2"
+                    android:layout_marginEnd="@dimen/margin_end_4"
+                    android:gravity="center"
+                    android:text="@{listdata.textdata}"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:texttype="bold" />
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/specialprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_4"
+                    android:layout_marginEnd="@dimen/margin_end_5"
+                    android:gravity="center_vertical"
+                    android:text="@{listdata.specialprice}"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/regularprice"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:texttype="normal" />
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/regularprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_4"
+                    android:layout_marginEnd="@dimen/margin_end_4"
+                    android:gravity="center_vertical"
+                    android:text="@{listdata.regularprice}"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:texttype="normal" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</layout>

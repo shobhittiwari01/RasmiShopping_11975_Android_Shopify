@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/greyshadow_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/coupon_tag"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_15"
+            android:src="@drawable/tag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/coupon_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/coupon_tag"
+            app:layout_constraintTop_toTopOf="parent"
+         />
+
+        <ImageView
+            android:id="@+id/close_but"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/coupon_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/margin_start_8"
+            android:visibility="gone"
+            android:src="@drawable/close_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

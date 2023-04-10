@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_returnprime" translatable="false">returnprime</string>
+    <string name="module_algoliasearch" translatable="false">algoliasearch</string>
+    <string name="module_FlitsApp" translatable="false">FlitsApp</string>
+</resources>

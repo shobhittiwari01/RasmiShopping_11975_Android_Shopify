@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright/**
+  ~          * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license      http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_5"
+   >
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_30"
+        android:layout_height="@dimen/height_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_10"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/cart_icon"
+            app:tint="@color/black"
+            android:layout_centerInParent="true"
+            android:src="@drawable/searchlatest"
+             />
+    </RelativeLayout>
+
+</FrameLayout>

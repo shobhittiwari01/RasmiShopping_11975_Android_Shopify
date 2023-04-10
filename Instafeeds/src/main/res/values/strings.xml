@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instaaccesstoken">IGQVJYUmRaQmZAxTWk1UndRem9DSUhCM1BXN0lwc1BFR1c4SzdqUnJMVXJhQlltR1FnX2pESm52UHlqUUZAwM3lXclNrX2tHcjRRZAlJLT2k0c1J4TEV3bXBURDNxVkpadlh2YkpOblBIZAnpmd0ItMGxvTgZDZD</string>
+    <string name="image">image</string>
+    <string name="instafields">id,media_url,permalink,username,caption</string>
+</resources>

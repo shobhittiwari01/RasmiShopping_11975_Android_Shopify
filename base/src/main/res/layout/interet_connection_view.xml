@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/width_120"
+        android:layout_height="@dimen/height_120"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ooops!"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="@dimen/text_size_40"/>
+    <TextView
+        android:id="@+id/nettext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please press restart button to get product details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ON YOUR DATA AND HIT RESTART"
+        android:textColor="#FFF"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_15"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/restartapp"
+        android:layout_width="@dimen/width_300"
+        android:layout_height="@dimen/height_50"
+        android:text="Restart"
+        android:textSize="@dimen/text_size_20"
+        android:background="@android:color/holo_green_light"/>
+</LinearLayout>
+</layout>

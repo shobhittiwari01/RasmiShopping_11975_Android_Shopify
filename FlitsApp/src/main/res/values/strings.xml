@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlitsAppModule</string>
+    <string name="recent_transaction">Recent Transaction</string>
+    <string name="reason">Credit Reason</string>
+    <string name="credit_date">Date</string>
+    <string name="mycredits">My Credits</string>
+    <string name="manage_credits">Manage Credits</string>
+    <string name="earned_credits">EARNED CREDITS</string>
+    <string name="spent_credits">SPENT CREDITS</string>
+    <string name="current_credits">CURRENT CREDITS</string>
+</resources>

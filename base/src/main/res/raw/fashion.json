@@ -1,0 +1,338 @@
+{
+  "sort_order":{
+    "top-bar_1671885328682":0,
+    "category-circle_16775687038950":1,
+    "banner-slider_1671885337844":2,
+    "standalone-banner_16776531908261":3,
+    "three-product-hv-layout_16776532782192":4,
+    "standalone-banner_16776534319133":5,
+    "collection-list-slider_16776534841634":6,
+    "collection-grid-layout_16776536413005":7,
+    "product-list-slider_16502641958450":8
+  },
+  "top-bar_1671885328682":{
+    "type":"top-bar",
+    "search_position":"search-as-icon",
+    "shape":"square",
+    "search_placeholder":"",
+    "wishlist":"1",
+    "item_banner":"0",
+    "item_dots":"1",
+    "item_total":"",
+    "panel_background_color":"{\"color\":\"#9A583C\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "active_dot_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "inactive_dot_color":"{\"color\":\"#aaaaaa\",\"opacity\":1,\"rgbastring\":\"rgba(170, 170, 170, 1)\"}",
+    "count_color":"{\"color\":\"#fe5151\",\"opacity\":1,\"rgbastring\":\"rgba(254, 81, 81, 1)\"}",
+    "count_textcolor":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255,255,255,1)\"}",
+    "icon_color":"{\"color\":\"#dddddd\",\"opacity\":1,\"rgbastring\":\"rgba(221, 221, 221, 1)\"}",
+    "search_border_color":"{\"color\":\"#dddddd\",\"opacity\":1,\"rgbastring\":\"rgba(221, 221, 221, 1)\"}",
+    "search_text_color":"{\"color\":\"#dddddd\",\"opacity\":1,\"rgbastring\":\"rgba(221, 221, 221, 1)\"}",
+    "search_background_color":"{\"color\":\"#dddddd\",\"opacity\":1,\"rgbastring\":\"rgba(221, 221, 221, 1)\"}",
+    "timestamp":"1671885328682",
+    "logo_image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/custom\/custom1\/top-bar_c1f72a39-bc75-4e04-a1a0-ba77781edb0d_1_1671885466.png",
+    "uniqueId":"top-bar_1671885328682"
+  },
+  "banner-slider_1671885337844":{
+    "type":"banner-slider",
+    "item_dots":"1",
+    "choiceList":"0",
+    "item_total":"2",
+    "item_image_size":"2x",
+    "active_dot_color":"{\"color\":\"#9A583C\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "inactive_dot_color":"{\"color\":\"#aaaaaa\",\"opacity\":1,\"rgbastring\":\"rgba(170, 170, 170, 1)\"}",
+    "timestamp":"1671885337844",
+    "items":[
+      {
+        "link_type":"web_url",
+        "link_value":"jg g ",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/custom\/custom1\/banner-slider_b6da9093-7992-48d3-bcbd-da16f1f8ccff_1_1671885588.png",
+        "title":""
+      },
+      {
+        "link_type":"web_url",
+        "link_value":" knlnlnlnl",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/custom\/custom1\/banner-slider_b6da9093-7992-48d3-bcbd-da16f1f8ccff_1_1671885606.png",
+        "title":""
+      }
+    ],
+    "uniqueId":"banner-slider_1671885337844"
+  },
+  "category-circle_16775687038950":{
+    "type":"category-circle",
+    "timestamp":"16775687038950",
+    "uniqueId":"category-circle_16775687038950",
+    "item_title":"0",
+    "item_border":"1",
+    "item_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_border_color":"{\"color\":\"#9a583c\",\"opacity\":\"1.00\",\"rgbastring\":\"rgba(154, 88, 60, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677652607.png"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_2_1677652640.png"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_3_1677652655.png"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_4_1677652668.png"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_5_1677652681.png"
+      }
+    ]
+  },
+  "standalone-banner_16776531908261":{
+    "type":"standalone-banner",
+    "timestamp":"16776531908261",
+    "uniqueId":"standalone-banner_16776531908261",
+    "item_button_position":"no-btn",
+    "item_image_size":"2x",
+    "item_text_alignment":"center",
+    "button_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "banner_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/standalone-banner_16776531908261_11677653222.png",
+    "banner_link_type":"collections",
+    "banner_link_value":"156368240676"
+  },
+  "three-product-hv-layout_16776532782192":{
+    "type":"three-product-hv-layout",
+    "timestamp":"16776532782192",
+    "uniqueId":"three-product-hv-layout_16776532782192",
+    "item_text_alignment":"center",
+    "item_shape":"square",
+    "header":"1",
+    "header_subtitle":"0",
+    "header_action":"0",
+    "item_border":"1",
+    "header_deal":"0",
+    "item_deal_start_date":"03\/01\/2023 12:03:19",
+    "item_deal_end_date":"03\/02\/2023 12:03:19",
+    "item_deal_format":"1day:20h:20m:20s",
+    "item_deal_message":"{deal-time}",
+    "header_title_text":"Recommended Items",
+    "header_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color":"{\"color\":\"#000000\",\"opacity\":\"1.00\",\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#a3a8b4\",\"opacity\":1,\"rgbastring\":\"rgba(163, 168, 180, 1)\"}",
+    "header_deal_color":"{\"color\":\"#b0aeae\",\"opacity\":1,\"rgbastring\":\"rgba(176, 174, 174, 1)\"}",
+    "header_action_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_action_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "header_title_font_weight":"medium",
+    "header_subtitle_font_weight":"medium",
+    "item_title_font_weight":"medium",
+    "header_title_font_style":"normal",
+    "header_subtitle_font_style":"normal",
+    "item_title_font_style":"normal",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16776532782192_1_1677653361.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16776532782192_21677653376.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_16776532782192_31677653397.png",
+        "title":"Fashion"
+      }
+    ]
+  },
+  "standalone-banner_16776534319133":{
+    "type":"standalone-banner",
+    "timestamp":"16776534319133",
+    "uniqueId":"standalone-banner_16776534319133",
+    "item_button_position":"no-btn",
+    "item_image_size":"original",
+    "item_text_alignment":"center",
+    "button_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "banner_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/standalone-banner_16776534319133_1_1677653455.png",
+    "banner_link_type":"collections",
+    "banner_link_value":"156368240676"
+  },
+  "collection-list-slider_16776534841634":{
+    "type":"collection-list-slider",
+    "timestamp":"16776534841634",
+    "uniqueId":"collection-list-slider_16776534841634",
+    "item_shape":"square",
+    "item_text_alignment":"center",
+    "header":"1",
+    "header_subtitle":"0",
+    "item_border":"1",
+    "header_title_text":"Lowest Prices Ever",
+    "header_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color":"{\"color\":\"#000000\",\"opacity\":\"1.00\",\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#a3a8b4\",\"opacity\":1,\"rgbastring\":\"rgba(163, 168, 180, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "header_title_font_weight":"light",
+    "header_subtitle_font_weight":"light",
+    "item_title_font_weight":"light",
+    "header_title_font_style":"normal",
+    "item_title_font_style":"normal",
+    "item_total":"",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16776534841634_1_1677653550.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16776534841634_2_1677653581.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-list-slider_16776534841634_3_1677653616.png",
+        "title":"Fashion"
+      }
+    ],
+    "header_action":0
+  },
+  "collection-grid-layout_16776536413005":{
+    "type":"collection-grid-layout",
+    "timestamp":"16776536413005",
+    "uniqueId":"collection-grid-layout_16776536413005",
+    "selection_type":"automatic",
+    "item_in_a_row":"3",
+    "item_rows":"2",
+    "item_shape":"square",
+    "item_text_alignment":"center",
+    "item_title":"1",
+    "item_border":"1",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "item_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_1_1677653687.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_2_1677653708.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_3_1677653725.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_4_1677653743.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_5_1677653762.png",
+        "title":"Fashion"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"156368240676",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_16776536413005_6_1677653779.png",
+        "title":"Fashion"
+      }
+    ]
+  },
+  "product-list-slider_16502641958450":{
+    "type":"product-list-slider",
+    "timestamp":"16502641958450",
+    "uniqueId":"product-list-slider_16502641958450",
+    "item_shape":"rounded",
+    "item_alignment":"left",
+    "header":"1",
+    "header_subtitle":"1",
+    "header_action":"1",
+    "item_border":"0",
+    "item_title":"1",
+    "item_price":"1",
+    "item_compare_at_price":"1",
+    "header_deal":"0",
+    "item_deal_start_date":"02\/14\/2023 02:00:40",
+    "item_deal_end_date":"02\/28\/2023 16:00:40",
+    "item_deal_format":"1day:20h:20m:20s",
+    "item_deal_message":"Offer Sale end soon!",
+    "header_title_text":"Find your inner style icon",
+    "header_subtitle_text":"All the brands you love",
+    "header_action_text":"View All",
+    "header_background_color":"{\"color\":\"#f5f0f0\",\"opacity\":1,\"rgbastring\":\"rgba(245, 240, 240, 1)\"}",
+    "header_title_color":"{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "header_deal_color":"{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "header_action_color":"{\"color\":\"#554c9b\",\"opacity\":1,\"rgbastring\":\"rgba(85, 76, 155, 1)\"}",
+    "header_action_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color":"{\"color\":\"#eaeded\",\"opacity\":1,\"rgbastring\":\"rgba(234, 237, 237, 1)\"}",
+    "item_border_color":"{\"color\":\"#f7be16\",\"opacity\":1,\"rgbastring\":\"rgba(247, 190, 22, 1)\"}",
+    "item_title_color":"{\"color\":\"#050505\",\"opacity\":1,\"rgbastring\":\"rgba(5, 5, 5, 1)\"}",
+    "item_price_color":"{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "item_compare_at_price_color":"{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "item_header_font_weight":"medium",
+    "header_subtitle_font_weight":"light",
+    "header_action_font_weight":"medium",
+    "item_title_font_weight":"medium",
+    "item_price_font_weight":"medium",
+    "item_compare_at_price_font_weight":"medium",
+    "item_header_font_style":"normal",
+    "header_subtitle_title_font_style":"normal",
+    "header_action_font_style":"normal",
+    "item_title_font_style":"normal",
+    "item_price_font_style":"normal",
+    "item_compare_at_price_font_style":"normal",
+    "item_total":"8",
+    "item_link_action_value":"156368240676",
+    "item_value":[
+      "4364528779300",
+      "4364497223716",
+      "4364529926180",
+      "4364496076836",
+      "4364485754916",
+      "4364494503972",
+      "4364450856996"
+    ]
+  }
+}

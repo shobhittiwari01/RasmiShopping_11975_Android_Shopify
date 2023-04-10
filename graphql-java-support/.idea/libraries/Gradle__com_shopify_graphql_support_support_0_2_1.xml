@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.shopify.graphql.support:support:0.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shopify.graphql.support/support/0.2.1/f79bf784410c08c47db3fa464c928347e2ac5127/support-0.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shopify.graphql.support/support/0.2.1/9cfea45044bfe701ee83baf92e97ebf3389c260f/support-0.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shopify.graphql.support/support/0.2.1/6be49692339f00c9f73ea21ffcca69f0772bf4b8/support-0.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

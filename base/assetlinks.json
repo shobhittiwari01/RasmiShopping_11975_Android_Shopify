@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rasmishopping.app",
+      "sha256_cert_fingerprints": [
+        "71:4D:AC:1B:B5:98:61:48:6D:4D:41:9D:BD:97:52:C2:0F:67:2D:15:E5:04:D6:3E:FC:0F:23:08:45:DA:38:95"
+      ]
+    }
+  }
+]

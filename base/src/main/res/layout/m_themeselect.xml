@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/themecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_color">
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/Themeheading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30"
+                app:texttype="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/choosethemes"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_start_5"
+                android:layout_marginTop="@dimen/margin_top_5"/>
+
+            <ImageView
+                android:id="@+id/closedialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_cros"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+            <Spinner
+                android:id="@+id/themefilter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/border2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_top_5"
+                app:layout_constraintTop_toBottomOf="@id/Themeheading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/livetheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintTop_toBottomOf="@id/themefilter">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/livetheme"
+                        app:layout_constraintDimensionRatio="H,1000:604"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@color/themeselectorcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/demostores"
+                            android:layout_width="@dimen/width_20"
+                            android:layout_height="@dimen/height_20"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:background="@drawable/circular_green_background"
+                            android:src="@drawable/ic_tick_icon" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:layout_toEndOf="@id/demostores"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/publishedtheme"
+                            app:texttype="whitetext" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/demo"
+                            app:texttype="whitetext" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grocerytheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintTop_toBottomOf="@id/livetheme">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/grocerytheme"
+                        app:layout_constraintDimensionRatio="H,1000:604"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@color/themeselectorcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/grocerytheme"
+                            app:texttype="whitetext" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/previewtheme"
+                            app:texttype="whitetext" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fashiontheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintTop_toBottomOf="@id/grocerytheme">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="H,1000:604"
+                        android:src="@drawable/fashiontheme"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@color/themeselectorcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/fashiontheme"
+                            app:texttype="whitetext" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/previewtheme"
+                            app:texttype="whitetext" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hometheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintTop_toBottomOf="@id/fashiontheme">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/homedecortheme"
+                        app:layout_constraintDimensionRatio="H,1000:604"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@color/themeselectorcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/hometheme"
+                            app:texttype="whitetext" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/previewtheme"
+                            app:texttype="whitetext" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/electheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintTop_toBottomOf="@id/hometheme">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/electronicstheme"
+                        app:layout_constraintDimensionRatio="H,1000:604"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:background="@color/themeselectorcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/electheme"
+                            app:texttype="whitetext" />
+
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:background="@color/themeselectorcolor"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_3"
+                            android:paddingEnd="@dimen/padding_3"
+                            android:text="@string/previewtheme"
+                            app:texttype="whitetext" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/separatorview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_10"
+                android:background="@color/gray_color"
+                app:layout_constraintTop_toBottomOf="@id/electheme" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

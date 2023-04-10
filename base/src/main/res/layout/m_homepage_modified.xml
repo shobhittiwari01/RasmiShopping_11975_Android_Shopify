@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4"
+                    android:visibility="gone"
+                    android:background="@color/gray_color"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/homecontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:layoutAnimation="@anim/layout_animation"
+                    android:orientation="vertical" />
+                <include layout="@layout/shimmer_layout_home"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/personalisedsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_color"
+                    android:visibility="gone">
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/personalisedyext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        android:layout_margin="@dimen/margin_8"
+                        android:gravity="center_vertical"
+                        android:text="@string/trendingproducts"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toTopOf="parent"
+                        bind:texttype="bold" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/personalised"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        android:background="@color/white"
+                        android:layoutAnimation="@anim/layout_animation"
+                        bind:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        bind:layout_constraintBottom_toBottomOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/personalisedyext" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bestsellerpersonalisedsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_color"
+                    android:visibility="gone">
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/bestpersonalisedyext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        android:layout_margin="@dimen/margin_8"
+                        android:gravity="center_vertical"
+                        android:text="@string/topselling"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toTopOf="parent"
+                        bind:texttype="bold" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bestpersonalised"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        android:background="@color/white"
+                        android:layoutAnimation="@anim/layout_animation"
+                        bind:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        bind:layout_constraintBottom_toBottomOf="parent"
+                        bind:layout_constraintTop_toBottomOf="@id/bestpersonalisedyext" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feeds_section"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    bind:layout_constraintBottom_toBottomOf="parent"
+                    bind:layout_constraintStart_toStartOf="parent">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/widget_title"
+                        bind:layout_constraintTop_toTopOf="parent"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintEnd_toEndOf="parent">
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/feedtittle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            bind:texttype="instafeed"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <com.rasmishopping.app.customviews.MageNativeTextView
+                            android:id="@+id/feedusername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            bind:texttype="instafeed_tag" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        bind:layout_constraintTop_toBottomOf="@id/widget_title"
+                        android:id="@+id/feedsrecycler"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</layout>

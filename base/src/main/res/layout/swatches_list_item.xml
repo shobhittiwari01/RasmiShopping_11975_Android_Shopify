@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/variant_card"
+        android:layout_width="wrap_content"
+        android:tag="saif"
+        android:layout_height="wrap_content">
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/variant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/lineborder"
+            android:paddingStart="@dimen/padding_start_20"
+            android:paddingTop="@dimen/padding_top_10"
+            android:paddingEnd="@dimen/padding_end_20"
+            android:paddingBottom="@dimen/padding_bottom_10"
+            android:singleLine="true"
+            app:texttype="normalgrey3lighttxt" />
+</RelativeLayout>
+</layout>

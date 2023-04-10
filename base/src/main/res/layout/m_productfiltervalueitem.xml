@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/instock"
+            android:backgroundTint="@color/gray_color"
+            android:buttonTint="@color/black"
+            android:text="@string/instock">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outstock"
+            android:backgroundTint="@color/gray_color"
+            android:buttonTint="@color/black"
+            android:text="@string/outstock">
+
+        </RadioButton>
+
+    </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

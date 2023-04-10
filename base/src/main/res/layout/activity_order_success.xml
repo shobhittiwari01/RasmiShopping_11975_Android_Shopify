@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".checkoutsection.activities.OrderSuccessActivity">
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_50"
+            android:gravity="center"
+            android:text="@string/thank_you"
+            android:textSize="@dimen/text_size_22"
+            app:texttype="normal"
+            app:layout_constraintBottom_toTopOf="@+id/order_placed" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/order_placed"
+            android:layout_width="@dimen/width_150"
+            android:layout_height="@dimen/height_150"
+            android:src="@drawable/success_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/order_placed_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_25"
+            android:gravity="center"
+            android:text="@string/thank_you_order_has_been_placed_successfully"
+            android:textSize="@dimen/text_size_14"
+            app:texttype="normal"
+            app:layout_constraintTop_toBottomOf="@+id/order_placed" />
+
+        <com.rasmishopping.app.customviews.MageNativeButton
+            android:id="@+id/continue_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_30"
+            android:layout_marginTop="@dimen/margin_top_30"
+            android:layout_marginEnd="@dimen/margin_end_30"
+            android:backgroundTint="@color/appTheme"
+            android:text="@string/continue_shopping"
+            app:buttontype="bold"
+            app:layout_constraintTop_toBottomOf="@+id/order_placed_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

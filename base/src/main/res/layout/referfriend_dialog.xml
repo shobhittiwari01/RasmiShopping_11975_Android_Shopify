@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/corner_radius_5"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_12">
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:text="@string/tell_your_friends"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/close_but"
+                android:layout_width="@dimen/width_20"
+                android:layout_height="@dimen/height_20"
+                android:tint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_cancel" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:gravity="center"
+                android:text="@string/refer_dailog_title"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+                app:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeEditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/black_border_shape"
+                android:gravity="center"
+                android:hint="@string/email_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/sendemail_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:text="@string/send_emails"
+                app:buttontype="white"
+                app:layout_constraintTop_toBottomOf="@+id/email_edt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

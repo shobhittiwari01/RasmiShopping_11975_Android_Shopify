@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imagecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="@dimen/card_elevation_2">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:id="@+id/feedimage"
+            android:layout_width="@dimen/imagewidth"
+            android:layout_height="@dimen/imageheight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/feedcaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            app:layout_constraintTop_toBottomOf="@id/imagecard"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizecaption"
+            android:paddingStart="@dimen/padding"
+            android:paddingEnd="@dimen/padding"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="@dimen/margin"
+            android:maxLines="2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

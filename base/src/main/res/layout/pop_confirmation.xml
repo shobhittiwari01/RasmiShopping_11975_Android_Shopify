@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/confirmation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:texttype="bold" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:texttype="descriptionlight" />
+        <com.rasmishopping.app.customviews.MageNativeButton
+            android:id="@+id/ok_dialog"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="@string/yes"
+            app:buttontype="filtenormal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/no_dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <com.rasmishopping.app.customviews.MageNativeButton
+            android:id="@+id/no_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/no"
+            app:buttontype="filtereset"
+            app:layout_constraintBottom_toBottomOf="@+id/ok_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ok_dialog"
+            app:layout_constraintTop_toTopOf="@+id/ok_dialog" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

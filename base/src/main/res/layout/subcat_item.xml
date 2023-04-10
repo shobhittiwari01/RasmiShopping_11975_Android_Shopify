@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/catview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="2dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/subcatimage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/catname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subcatimage"
+            app:texttype="normalgrey3smalltxt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

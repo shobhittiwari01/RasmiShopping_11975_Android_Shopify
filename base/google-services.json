@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "900908769747",
+    "project_id": "isli-shopping",
+    "storage_bucket": "isli-shopping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900908769747:android:25df2969eaefdb5a27cf26",
+        "android_client_info": {
+          "package_name": "com.rasmishopping.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900908769747-b1e5dpvge7m82lf5stftp1km13d96ilj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rasmishopping.app",
+            "certificate_hash": "3b08afe97351b0fa0045eff2e3e2ae8d505e97bb"
+          }
+        },
+        {
+          "client_id": "900908769747-v7oti12hacli7g3s0pgb41fu0sn7soa4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rasmishopping.app",
+            "certificate_hash": "81ad77b73d870c6bb7bb21f086da98e6f8005d43"
+          }
+        },
+        {
+          "client_id": "900908769747-o8mphdgk023ep01clj87puvne8vj4cvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy7RAMicwRraGS7CVfOdpbDIHIbQuEelE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900908769747-o8mphdgk023ep01clj87puvne8vj4cvq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "900908769747-b7o75a5rppg0jdfhhe59tpc627596fpv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.islishopping.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

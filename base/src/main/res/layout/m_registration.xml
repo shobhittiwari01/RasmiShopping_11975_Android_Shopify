@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="handlers"
+            type="com.rasmishopping.app.loginsection.activity.RegistrationActivity.MyClickHandlers" />
+    </data>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.MaterialComponents.Light"
+        android:theme="@style/LoginTheme">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash"
+                bind:layout_constraintBottom_toBottomOf="@+id/view"
+                bind:layout_constraintEnd_toStartOf="@+id/endguide"
+                bind:layout_constraintStart_toStartOf="@+id/startguide"
+                bind:layout_constraintTop_toTopOf="@+id/view"
+                bind:layout_constraintVertical_bias="0.06999999" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.5"
+                bind:layout_constraintBottom_toBottomOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/startguide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                bind:layout_constraintGuide_percent="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/endguide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                bind:layout_constraintGuide_percent="1.0" />
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/singup"
+                android:textAlignment="viewStart"
+                android:gravity="start|center_vertical"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold"
+                bind:texttype="sign_text"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/signdes"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="normal"
+                bind:texttype="normal"
+                android:textColor="@color/normalgrey2text"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="@+id/startguide"
+                bind:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fNameLyt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout"
+                bind:boxStrokeColor="@drawable/colorselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/black"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layoutDirection="locale"
+                    android:hint="@string/firstname"
+                    android:gravity="start|center_vertical"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lNameLyt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout"
+                bind:boxStrokeColor="@drawable/colorselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/black"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/fNameLyt">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="locale"
+                    android:hint="@string/lastname"
+
+                    android:gravity="start|center_vertical"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailLyt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/black"
+                bind:boxStrokeColor="@drawable/colorselector"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/lNameLyt">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="locale"
+                    android:hint="@string/email"
+                    android:gravity="start|center_vertical"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="14dp"
+                bind:hintEnabled="false"
+                bind:boxStrokeColor="@drawable/colorselector"
+                bind:hintTextColor="@color/black"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/emailLyt"
+                bind:passwordToggleDrawable="@drawable/eye_new"
+                bind:passwordToggleEnabled="true"
+                bind:passwordToggleTint="@color/normalgrey2text">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:hint="@string/Password"
+                    android:layoutDirection="locale"
+                    android:gravity="start|center_vertical"
+
+                    android:textAlignment="viewStart"
+                    android:inputType="textPassword"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="14dp"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/black"
+                bind:boxStrokeColor="@drawable/colorselector"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/passLyt"
+                bind:passwordToggleDrawable="@drawable/eye_new"
+                bind:passwordToggleEnabled="true"
+                bind:passwordToggleTint="@color/normalgrey2text">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/Confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:hint="@string/Confirm_password"
+                    android:layoutDirection="locale"
+                    android:gravity="start|center_vertical"
+                    android:textAlignment="viewStart"
+                    android:inputType="textPassword"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/MageNative_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="@{handlers::RegistrationRequest}"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                bind:buttontype="white"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/passwordLyt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

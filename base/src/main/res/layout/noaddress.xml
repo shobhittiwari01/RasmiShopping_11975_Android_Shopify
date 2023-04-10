@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="handler"
+            type="com.rasmishopping.app.addresssection.activities.AddressList.ClickHandler" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nocartsection"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/nocarttext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/empty_address"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/nocartback"/>
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:texttype="nocarttext"
+            android:layout_margin="20dp"
+            android:text="@string/noaddress"
+            android:id="@+id/nocarttext"/>
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:texttype="emptystring"
+            app:layout_constraintTop_toBottomOf="@+id/nocarttext"
+            android:text="@string/emptyaddress"
+            android:layout_margin="10dp"
+            android:id="@+id/emptystring"/>
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@+id/emptystring"
+            android:text="@string/continue_shopping"
+            android:id="@+id/continue_shopping"
+            android:focusable="true"
+            app:texttype="nodata"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

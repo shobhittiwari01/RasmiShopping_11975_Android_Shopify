@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top_8"
+        android:background="@color/white"
+        android:padding="@dimen/padding_10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_image"
+            imageUrl="@{commondata.imageurl}"
+            android:layout_width="@dimen/width_230"
+            android:layout_height="@dimen/height_230"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_placeholder" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_10"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:layout_marginEnd="@dimen/margin_end_10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_image"
+            app:texttype="bold" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/productquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_10"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:layout_marginEnd="@dimen/margin_end_10"
+            android:text="@string/quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_name"
+            app:texttype="bold" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/productquantity_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_10"
+            android:layout_marginTop="@dimen/margin_top_12"
+            app:layout_constraintStart_toEndOf="@+id/productquantity"
+            app:layout_constraintTop_toBottomOf="@+id/product_name"
+            app:texttype="normal" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/productvariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_10"
+            android:layout_marginTop="@dimen/margin_top_8"
+            android:layout_marginEnd="@dimen/margin_end_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productquantity"
+            app:texttype="bold" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

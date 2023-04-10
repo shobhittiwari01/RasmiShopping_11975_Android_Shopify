@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.okhttp3:okhttp-testing-support:3.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-testing-support/3.7.0/b08bb56de165868d1f10e4dcf18bff1c7ffafa0a/okhttp-testing-support-3.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-testing-support/3.7.0/cd34d8e0c61d8bd8e2312ea24215e1b898d07d6/okhttp-testing-support-3.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-testing-support/3.7.0/a315fb339086a6d1e4f48746cccfd224f51d77ef/okhttp-testing-support-3.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

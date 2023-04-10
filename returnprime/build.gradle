@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+      //  applicationId "com.shopify.returnprime"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        //testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+repositories {
+    maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+}
+dependencies {
+    implementation project(':base')
+    implementation "androidx.browser:browser:1.4.0"
+}

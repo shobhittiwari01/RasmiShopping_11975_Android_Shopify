@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="creditcolor">#000654</color>
+    <color name="gray_color">#F1F1F1</color>
+    <color name="green">#008000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="mdtp_dark_gray">#555050</color>
+    <color name="appThemeColor">#df3faf</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="appTheme">#08C5FF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="lightgray">#F2F2F2</color>
+    <color name="black">#000000</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="light_cream">#FFFFFADC</color>
+    <color name="red">#F90A0B</color>
+    <color name="price_red">#F90A0B</color>
+    <color name="orange">#ff9500</color>
+    <string name="normalgrey1text">#050505</string>
+    <string name="bluetext">#2472C1</string>
+    <string name="normalgrey2text">#383838</string>
+
+    <string name="normalgrey3text">#6B6B6B</string>
+    <string name="normalgrey3textt">#6B6B6B</string>
+    <string name="normalgrey3txtregular">#6B6B6B</string>
+    <string name="greentext">#28A138</string>
+    <string name="secondary2">#2472C1</string>
+    <color name="normalgrey1text">#050505</color>
+    <color name="normalgrey2text">#383838</color>
+    <color name="normalgrey3text">#6B6B6B</color>
+    <color name="greentext">#28A138</color>
+    <color name="grey5txt">#D1D1D1</color>
+    <color name="magenativecolor">#5160C0</color>
+    <color name="darkblue">#143F6B</color>
+    <color name="darkblue2">#69A5E3</color>
+    <color name="rategreen">#28A138</color>
+    <color name="blue">#2472C1</color>
+    <color name="customgrey">#DEDEDE</color>
+    <color name="menucopyright">#9E9E9E</color>
+    <color name="submenutext">#6B6B6B</color>
+    <color name="clearrecentcolor">#F55353</color>
+    <color name="nocarttext">#303030</color>
+    <color name="graythememode">#EDEBEB</color>
+    <color name="outofstockred">#F43939</color>
+    <color name="specialpricecolor">#575453</color>
+    <color name="cartbackground">#F1F1F1</color>
+    <color name="cardbackground">#FFFFFF</color>
+    <color name="outofstock_background">#F0F0F0</color>
+</resources>

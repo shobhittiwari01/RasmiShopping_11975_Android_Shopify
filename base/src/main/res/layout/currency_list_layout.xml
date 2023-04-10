@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_dialog_shape"
+        android:padding="@dimen/padding_10">
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/currency_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currency"
+            app:texttype="normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/close_icon" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/currency_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_10"
+            app:layout_constraintTop_toBottomOf="@+id/currency_list_title"
+            tools:listitem="@layout/currency_list_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

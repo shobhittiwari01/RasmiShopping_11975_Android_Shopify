@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+   >
+    <data>
+        <variable
+            name="handler"
+            type="com.rasmishopping.app.addresssection.activities.AddressList.ClickHandler" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content">
+        <include android:id="@+id/noaddres"
+            layout="@layout/noaddress"
+            bind:handler="@{handler}" />
+        <include
+            android:id="@+id/mainlist"
+            layout="@layout/m_addresslist_main"
+            bind:handler="@{handler}" />
+        <include
+            android:id="@+id/mainbottomsheet"
+            layout="@layout/m_addressbottomsheet"
+            bind:handler="@{handler}" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+
+

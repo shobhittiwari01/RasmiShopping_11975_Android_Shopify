@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_60"
+    android:layout_height="@dimen/height_50"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/qtyfield"
+        android:layout_width="@dimen/width_50"
+        android:layout_height="@dimen/height_50"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_start_5"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:layout_marginEnd="@dimen/margin_end_5"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rect_drawable"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

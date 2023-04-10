@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="features"
+            type="com.rasmishopping.app.basesection.models.FeaturesModel" />
+
+        <variable
+            name="handlers"
+            type="com.rasmishopping.app.loginsection.activity.LoginActivity.MyClickHandlers" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@style/Theme.MaterialComponents.Light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:theme="@style/LoginTheme"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        bind:layout_constraintEnd_toEndOf="parent"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_16">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash"
+                bind:layout_constraintBottom_toBottomOf="@+id/view"
+                bind:layout_constraintEnd_toStartOf="@+id/endguide"
+                bind:layout_constraintStart_toStartOf="@+id/startguide"
+                bind:layout_constraintTop_toTopOf="@+id/view"
+                bind:layout_constraintVertical_bias="0.06999999" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.5"
+                bind:layout_constraintBottom_toBottomOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/startguide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                bind:layout_constraintGuide_percent="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/endguide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                bind:layout_constraintGuide_percent="1.0" />
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/signin"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/imageView3"
+                bind:texttype="sign_text" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/signdes"
+                android:textColor="@color/normalgrey2text"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="normal"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="@+id/startguide"
+                bind:layout_constraintTop_toBottomOf="@+id/textView"
+                bind:texttype="normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_lyt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:theme="@style/MyTextInputLayout"
+                bind:boxStrokeColor="@drawable/colorselector"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/black"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/normalgrey3text"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_lyt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout"
+                bind:boxStrokeColor="@drawable/colorselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                bind:hintEnabled="false"
+                bind:hintTextColor="@color/red"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/username_lyt"
+                bind:passwordToggleDrawable="@drawable/eye_new"
+                bind:passwordToggleEnabled="true"
+                bind:passwordToggleTint="@color/normalgrey2text">
+
+                <com.rasmishopping.app.customviews.MageNativeEditInputText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="locale"
+                    android:textColor="@color/normalgrey3text"
+                    android:textAlignment="viewStart"
+                    bind:edittype="email_pass_color"
+                    tools:targetApi="lollipop" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="@{handlers::onSignUpClicked}"
+                android:text="@string/signin"
+                bind:buttontype="white"
+                android:textAllCaps="false"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/forgotpassword" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:onClick="@{handlers::forgotPass}"
+                android:text="@string/forgotpassword"
+                bind:chainUseRtl="true"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/password_lyt"
+                bind:texttype="normalgrey2lighttxt" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/signupbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="@{handlers::newsignup}"
+                android:text="@string/donthaveaccount"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/sociallogins"
+                bind:texttype="normalgrey2text" />
+
+            <LinearLayout
+                android:id="@+id/orsection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                bind:layout_constraintTop_toBottomOf="@+id/login">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_start_10"
+                    android:layout_weight="1"
+                    android:background="#D7D7D7" />
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/orsigninwith"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="#6B6B6B"
+                    android:textSize="@dimen/text_size_12"
+                    bind:texttype="normal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_end_10"
+                    android:layout_weight="1"
+                    android:background="#D7D7D7" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sociallogins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/orsection">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/MageNative_social_login_google"
+                    android:layout_width="@dimen/width_48"
+                    android:layout_height="@dimen/height_48"
+                    android:layout_marginStart="@dimen/margin_start_10"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:layout_marginEnd="@dimen/margin_end_10"
+                    android:background="@drawable/border_circle_login"
+                    android:onClick="@{handlers::GoogleLogin}"
+                    android:text="@string/google_sign_up"
+                    bind:isDarkTheme="true"
+                    bind:layout_constraintStart_toStartOf="parent"
+                    bind:layout_constraintTop_toTopOf="parent">
+
+                    <!--                    <com.rasmishopping.app.customviews.MageNativeTextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/margin_start_80"-->
+                    <!--                        android:text="@string/google_sign_up"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        bind:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        bind:layout_constraintTop_toTopOf="parent"-->
+                    <!--                        bind:texttype="whitetext" />-->
+
+                    <ImageView
+                        android:id="@+id/google_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search"
+                        bind:layout_constraintBottom_toBottomOf="parent"
+                        bind:layout_constraintEnd_toEndOf="parent"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fb"
+                    android:layout_width="@dimen/width_48"
+                    android:layout_height="@dimen/height_48"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/margin_start_10"
+                    android:layout_marginEnd="@dimen/margin_end_10"
+                    android:background="@drawable/border_circle_login"
+                    android:onClick="@{handlers::FbLogin}"
+                    bind:isDarkTheme="true"
+                    bind:layout_constraintHorizontal_bias="0.3"
+                    bind:layout_constraintStart_toEndOf="@+id/MageNative_social_login_google"
+                    bind:layout_constraintTop_toTopOf="@+id/MageNative_social_login_google">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/fb_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        bind:layout_constraintBottom_toBottomOf="parent"
+                        bind:layout_constraintStart_toStartOf="parent"
+                        bind:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                    <com.rasmishopping.app.customviews.MageNativeTextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/margin_start_80"-->
+                    <!--                        android:text="@string/sign_up_with_facebook"-->
+                    <!--                        bind:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        bind:layout_constraintTop_toTopOf="parent"-->
+                    <!--                        bind:texttype="whitetext" />-->
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_iconfinder_facebook_online_social_media_734399"
+                        bind:layout_constraintBottom_toBottomOf="parent"
+                        bind:layout_constraintEnd_toEndOf="@+id/fb_button"
+                        bind:layout_constraintStart_toStartOf="parent"
+
+
+                        bind:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
+

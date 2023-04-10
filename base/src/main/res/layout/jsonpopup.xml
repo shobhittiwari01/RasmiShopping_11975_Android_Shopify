@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainsection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/width_20"
+                android:layout_height="@dimen/height_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_cancel" />
+
+
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/coupontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/margin_3"
+                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_button"
+                android:gravity="center"
+                android:paddingStart="@dimen/padding_2"
+                android:paddingEnd="@dimen/padding_2"
+                android:text="Coupon Code"
+                app:texttype="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/copyimage"
+                android:layout_width="@dimen/height_30"
+                android:layout_height="@dimen/height_30"
+                android:src="@drawable/ic_copy_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/margin_10"
+                app:tint="#A346A8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

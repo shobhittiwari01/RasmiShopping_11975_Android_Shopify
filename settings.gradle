@@ -1,0 +1,16 @@
+include ':base'
+//include ':shopifysdk'
+include ':algoliasearch'
+include ':FlitsApp'
+include ':returnprime'
+include ':rewardify'
+include ':mltranslation'
+include ':apicall'
+include ':Instafeeds'
+include ':ZapietApp'
+include ':BackInStock'
+include ':livesale'
+//include ':applivesale'
+include ':CartdiscountListing'
+
+

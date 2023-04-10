@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Algolia</string>
+    <string name="search_items">Search for items</string>
+</resources>

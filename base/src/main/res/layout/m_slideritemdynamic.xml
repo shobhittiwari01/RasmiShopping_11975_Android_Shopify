@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productsection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        app:cardCornerRadius="@dimen/card_radius_5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/innerproductsection"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imagesection"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="0dp"
+                app:layout_constraintDimensionRatio="H,130:174"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image" />
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/out_of_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/outofstockbg"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="25dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/out_of_stock"
+                    android:visibility="gone"
+                    app:texttype="whitenormaltext" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/item_data_section"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imagesection">
+
+                <com.rasmishopping.app.customviews.MageNativeTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="8dp"
+                    android:lineSpacingExtra="0dp"
+                    android:maxLines="1"
+                    app:texttype="productslideritemname" />
+
+                <LinearLayout
+                    android:id="@+id/pricesection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/regularprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        app:texttype="productslideritemprice" />
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/specialprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_2"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        app:texttype="productlistnormalprice" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

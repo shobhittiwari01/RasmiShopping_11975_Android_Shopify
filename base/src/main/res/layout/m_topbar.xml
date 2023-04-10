@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/fullsearchsection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@drawable/corner_search"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/width_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/searchlatest"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/fullsearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/i_m_shoppping_for"
+                android:maxLines="1"
+                android:paddingTop="4dp"
+                android:paddingStart="3dp"
+                android:textSize="@dimen/text_size_12"
+                app:texttype="tooltextnormal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

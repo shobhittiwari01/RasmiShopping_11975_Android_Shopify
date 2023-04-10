@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="clickproduct"
+            type="com.rasmishopping.app.basesection.adapters.NotificationListAdapter.Product" />
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainsection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/height_4"
+        app:cardCornerRadius="5dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="1dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/notifcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/arrowsection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2"
+                android:layout_marginEnd="@dimen/margin_end_3"
+                android:onClick="@{(view) -> clickproduct.productClick()}"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/expand_collapse"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_arrow_down_icon"
+                    android:tag="noexpand"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/appimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:src="@mipmap/ic_launcher"
+                android:onClick="@{(view) -> clickproduct.notificationClick()}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/titlesection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:justificationMode="inter_word"
+                android:onClick="@{(view) -> clickproduct.notificationClick()}"
+                app:layout_constraintEnd_toStartOf="@id/arrowsection"
+                app:layout_constraintStart_toEndOf="@id/appimage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="notificationtittle" />
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/messagesection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:onClick="@{(view) -> clickproduct.notificationClick()}"
+                app:layout_constraintEnd_toStartOf="@id/arrowsection"
+                app:layout_constraintStart_toEndOf="@id/appimage"
+                app:layout_constraintTop_toBottomOf="@id/titlesection"
+                app:texttype="notificationmessage" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imagesection"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/height_5"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                android:onClick="@{(view) -> clickproduct.notificationClick()}"
+                app:layout_constraintDimensionRatio="H,1:0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/messagesection">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/bigimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    bind:imageUrl="@{commondata.imageurl}"/>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                app:layout_constraintTop_toBottomOf="@id/imagesection" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

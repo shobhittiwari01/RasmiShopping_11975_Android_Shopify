@@ -1,0 +1,7 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply from: 'graphql.java.gen.build.gradle'

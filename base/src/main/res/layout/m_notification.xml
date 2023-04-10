@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notifcontainerr"
+        android:layout_width="match_parent"
+        android:background="@color/notification_back"
+        android:layout_height="match_parent">
+        <include layout="@layout/m_cartlist_shimmer_layout_grid"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nonotificationsection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nonotificationback"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="@dimen/margin_bottom_5"
+                android:src="@drawable/empty_cart"
+                app:layout_constraintBottom_toTopOf="@+id/nonotificationtext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/nonotificationtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:text="@string/nonotification"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:texttype="nocarttext" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notificationrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/m_notificationlisting"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:spanCount="1"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

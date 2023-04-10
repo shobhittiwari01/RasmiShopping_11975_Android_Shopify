@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="common"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+
+        <variable
+            name="home"
+            type="com.rasmishopping.app.homesection.models.Home" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bannerimage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintDimensionRatio="H,700:394"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:tag="banner"
+            android:scaleType="fitXY"
+           imageUrl="@{common.imageurl}"
+            android:onClick="@{view->home.Click(view,home)}"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

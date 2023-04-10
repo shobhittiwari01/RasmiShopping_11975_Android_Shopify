@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/rlButtons"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/lightgray"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lienar_main_cat_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </ScrollView>
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lienar_sub_cat_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+            </ScrollView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:id="@+id/rlButtons"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_weight="0.5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_toLeftOf="@+id/btn_apply"
+                android:layout_toRightOf="@id/btn_apply"
+                android:background="@drawable/reset_background"
+                android:text="@string/reset"
+
+                app:buttontype="filtereset"
+                android:textColor="@color/submenutext" />
+            <com.rasmishopping.app.customviews.MageNativeButton
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/height_50"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@color/darkblue2"
+                app:buttontype="filtenormal"
+                android:text="@string/apply_filter"
+                android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</layout>

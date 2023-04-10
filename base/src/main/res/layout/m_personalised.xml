@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="commondata"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="features"
+            type="com.rasmishopping.app.basesection.models.FeaturesModel" />
+
+
+        <variable
+            name="listdata"
+            type="com.rasmishopping.app.basesection.models.ListData" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/width_200"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        bind:cardCornerRadius="@dimen/corner_radius_3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_section"
+            android:layout_width="@dimen/width_200"
+            android:layout_height="@dimen/height_275"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/padding_bottom_4">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/image"
+                bind:imageUrl="@{commondata.imageurl}"
+                bind:layout_constraintDimensionRatio="H,0.7:0.7"
+                bind:layout_constraintTop_toTopOf="parent" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_4"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@{listdata.textdata}"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintTop_toBottomOf="@id/image"
+                bind:texttype="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/wishlist_but"
+                android:layout_width="@dimen/width_24"
+                android:layout_height="@dimen/height_24"
+                android:layout_marginStart="@dimen/margin_start_8"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_8"
+
+                android:src="@drawable/wishlist_icon"
+                android:visibility="gone"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/wish_but"
+                android:layout_width="@dimen/width_18"
+                android:layout_height="@dimen/height_18"
+                android:layout_marginStart="@dimen/margin_start_8"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_8"
+
+                android:src="@drawable/wishlist_icon"
+                android:visibility="gone"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cart_but"
+                android:layout_width="@dimen/width_18"
+                android:layout_height="@dimen/height_18"
+                android:layout_marginStart="@dimen/margin_start_8"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:layout_marginEnd="@dimen/margin_end_8"
+                android:src="@drawable/ic_cart"
+                android:tint="@color/black"
+                android:visibility="gone"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/shortdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_4"
+                android:layout_marginEnd="@dimen/margin_end_4"
+                android:layout_marginBottom="@dimen/margin_bottom_4"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/padding_end_4"
+                android:text="@{listdata.description}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:visibility="gone"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/name"
+                bind:texttype="normal" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/specialprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@{listdata.specialprice}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:visibility="gone"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/shortdescription"
+                bind:texttype="bold" />
+
+            <com.rasmishopping.app.customviews.MageNativeTextView
+                android:id="@+id/regularprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_bottom_10"
+                android:text="@{listdata.regularprice}"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toBottomOf="@id/specialprice"
+                bind:texttype="normal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

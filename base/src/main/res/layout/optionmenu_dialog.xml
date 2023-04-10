@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="features"
+            type="com.rasmishopping.app.basesection.models.FeaturesModel" />
+
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin_top_12"
+            android:layout_marginEnd="@dimen/margin_end_5"
+            android:elevation="@dimen/elevation_5"
+            app:srcCompat="@drawable/arrow_top" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_30"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/corner_radius_5"
+            app:cardElevation="@dimen/card_elevation_5"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/padding_20">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wishlistsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_35"
+                    android:visibility="@{features.in_app_wishlist ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/wishlist_icon"
+                        android:layout_width="@dimen/width_20"
+                        android:layout_height="@dimen/height_20"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/wishlist_icon" />
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/wishlist_but"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_20"
+                        android:layout_marginStart="@dimen/margin_start_20"
+                        android:layout_marginTop="@dimen/margin_top_3"
+                        android:text="@string/my_favorite"
+                        android:textAllCaps="true"
+                        android:textColor="@color/main_color_gray_lt"
+                        android:textSize="@dimen/text_size_12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/wishlist_icon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:background="@color/main_color_gray_lt"
+                    app:layout_constraintTop_toBottomOf="@+id/wishlistsection" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/sharesection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/line1">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/share_icon"
+                        android:layout_width="@dimen/width_20"
+                        android:layout_height="@dimen/height_20"
+                        android:layout_marginTop="@dimen/margin_top_20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/share_icon" />
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/share_but"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_20"
+                        android:layout_marginStart="@dimen/margin_start_20"
+                        android:layout_marginTop="@dimen/margin_top_22"
+                        android:text="@string/share_this"
+                        android:textAllCaps="true"
+                        android:textColor="@color/main_color_gray_lt"
+                        android:textSize="@dimen/text_size_12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/share_icon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/margin_top_20"
+                    android:background="@color/main_color_gray_lt"
+                    app:layout_constraintTop_toBottomOf="@+id/sharesection" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/notintrestedsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/line2">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/close_icon"
+                        android:layout_width="@dimen/width_20"
+                        android:layout_height="@dimen/height_20"
+                        android:layout_marginTop="@dimen/margin_top_20"
+                        android:tint="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_cancel" />
+
+                    <com.rasmishopping.app.customviews.MageNativeTextView
+                        android:id="@+id/close_but"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_20"
+                        android:layout_marginStart="@dimen/margin_start_20"
+                        android:layout_marginTop="@dimen/margin_top_22"
+                        android:text="@string/close"
+                        android:textAllCaps="true"
+                        android:textColor="@color/main_color_gray_lt"
+                        android:textSize="@dimen/text_size_12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/close_icon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</layout>
+

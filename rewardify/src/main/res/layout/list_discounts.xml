@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discount_txt"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/discountcode"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/copy"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/greybg"
+        app:layout_constraintTop_toBottomOf="@+id/discount_txt"
+        />
+
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:id="@+id/copy"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discountcode"
+        android:text="Copy"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectanglebg"
+        app:layout_constraintTop_toBottomOf="@+id/discount_txt"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/recoverdiscounts"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/revert_discount_code"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectanglebg"
+        app:layout_constraintTop_toBottomOf="@+id/discountcode"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

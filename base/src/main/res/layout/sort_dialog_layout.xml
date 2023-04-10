@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/half_round_corner"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/closedrawer"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="10dp"
+            android:padding="2dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/border_circle"
+            app:srcCompat="@drawable/closedrawer" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/sort_by"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/sort_heading"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="carttotal" />
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/menucopyright"
+            app:layout_constraintTop_toBottomOf="@id/sort_by"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/feature_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:layout_marginTop="@dimen/height_20"
+            android:gravity="center_vertical"
+            android:text="@string/featured"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/featured"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="featured"
+            android:layout_marginTop="@dimen/height_20"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:radiotype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/best_selling_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/best_selling"
+            android:layout_marginTop="@dimen/margin_4"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/feature_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/best_selling"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="bestseller"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feature_txt"
+            app:radiotype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/atoz_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:tag="featured"
+            android:gravity="center_vertical"
+            android:text="@string/atoz"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/best_selling_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/atoz"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="atoz"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/best_selling_txt"
+            app:radiotype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/ztoa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/ztoa"
+            android:layout_marginTop="@dimen/margin_4"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/atoz_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/ztoa"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="ztoa"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/atoz_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:radiotype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/htol_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_4"
+            android:text="@string/htol"
+            app:layout_constraintTop_toBottomOf="@id/ztoa_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/htol"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="htol"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ztoa_text"
+            app:radiotype="sort_head" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/ltoh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/ltoh"
+            android:layout_marginTop="@dimen/margin_4"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/htol_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/ltoh"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="ltoh"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/htol_text"
+            app:radiotype="bold" />
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/oton_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/oton"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/ltoh_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/oton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="oton"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/ltoh_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:radiotype="bold" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/ntoo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/black"
+            android:text="@string/ntoo"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/oton_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:texttype="sort_head" />
+
+
+        <com.rasmishopping.app.customviews.MageNativeRadioButton
+            android:id="@+id/ntoo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            android:buttonTint="@color/menucopyright"
+            android:tag="ntoo"
+            android:layout_marginTop="@dimen/margin_4"
+            app:layout_constraintTop_toBottomOf="@id/oton_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:radiotype="sort_head" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+

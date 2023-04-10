@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_lightgray"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_forgot_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/mageNativeTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginTop="16dp"
+            android:text="@string/forgot_password"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+            app:texttype="boldtext" />
+
+        <com.rasmishopping.app.customviews.MageNativeTextView
+            android:id="@+id/mageNativeTextView"
+            android:layout_width="@dimen/width_300"
+            android:layout_height="@dimen/height_50"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:texttype="normalgrey3lighttxt"
+            android:text="@string/forgotpasswordinstruction"
+            app:layout_constraintStart_toStartOf="@+id/mageNativeTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/mageNativeTextView2"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/close_icon" />
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/textInputLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginEnd="20dp"-->
+        <!--           -->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/mageNativeTextView"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/mageNativeTextView">-->
+
+        <com.rasmishopping.app.customviews.MageNativeEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_corner_gray"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding_14"
+            android:textColorHint="@color/black"
+            app:edittype="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mageNativeTextView" />
+
+
+        <com.rasmishopping.app.customviews.MageNativeButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/submit"
+            app:buttontype="white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            app:texttype="normal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

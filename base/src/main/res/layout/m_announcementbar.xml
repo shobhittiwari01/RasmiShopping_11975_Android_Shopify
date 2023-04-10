@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data  >
+        <variable
+            name="image"
+            type="com.rasmishopping.app.basesection.models.CommanModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/annnouncementimage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintDimensionRatio="H,700:72"
+            app:imageUrl="@{image.imageurl}"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/annnouncementimage" />
+        <View
+            android:id="@+id/webdata"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000ffff"
+            app:layout_constraintTop_toBottomOf="@+id/annnouncementimage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

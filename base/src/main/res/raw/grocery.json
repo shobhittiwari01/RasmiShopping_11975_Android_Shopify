@@ -1,0 +1,680 @@
+{
+  "top-bar_1615532812": {
+    "type": "top-bar",
+    "timestamp": "1615532812",
+    "uniqueId": "top-bar_1615532812",
+    "search_position": "search-as-icon",
+    "shape": "rounded",
+    "search_placeholder": "Search by products ",
+    "wishlist": "1",
+    "item_banner": "0",
+    "item_dots": "1",
+    "panel_background_color": "{\"color\":\"#03AD53\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "count_color": "{\"color\":\"#03AD53\",\"opacity\":1,\"rgbastring\":\"rgba(237, 181, 245, 1)\"}",
+    "count_textcolor": "{\"color\":\"#423b78\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "icon_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(66, 59, 120, 1)\"}",
+    "active_dot_color": "{\"color\":\"#03AD53\",\"opacity\":1,\"rgbastring\":\"rgba(20, 63, 107, 1)\"}",
+    "inactive_dot_color": "{\"color\":\"#d1d1d1\",\"opacity\":1,\"rgbastring\":\"rgba(209, 209, 209, 1)\"}",
+    "search_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "search_text_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "search_border_color": "{\"color\":\"#6b6b6b\",\"opacity\":1,\"rgbastring\":\"rgba(107, 107, 107, 1)\"}",
+    "logo_image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative.myshopify.com\/homepage_component\/custom1\/top-bar_1615532812_11671182108.png",
+    "item_total": ""
+  },
+  "sort_order": {
+    "top-bar_1615532812": 0,
+    "category-circle_16155356551092": 1,
+    "banner-slider_167765786140912": 2,
+    "standalone-banner_167765841302615": 3,
+    "standalone-banner_16699632336551": 4,
+    "three-product-hv-layout_167765808465314": 5,
+    "standalone-banner_16699637868192": 6,
+    "standalone-banner_16529674477790": 7,
+    "collection-grid-layout_167765907241517": 8,
+    "collection-list-slider_167766330083919": 9,
+    "standalone-banner_16588293348920": 10,
+    "fixed-customisable-layout_167766351666320":11
+  },
+  "category-circle_16155356551092": {
+    "type": "category-circle",
+    "timestamp": "16155356551092",
+    "uniqueId": "category-circle_16155356551092",
+    "item_title": "1",
+    "item_border": "0",
+    "item_title_color": "{\"color\":\"#383838\",\"opacity\":1,\"rgbastring\":\"rgba(56, 56, 56, 1)\"}",
+    "item_border_color": "{\"color\":\"#d1d1d1\",\"opacity\":1,\"rgbastring\":\"rgba(209, 209, 209, 1)\"}",
+    "panel_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_font_weight": "light",
+    "item_font_style": "normal",
+    "items": [
+      {
+        "link_type": "collections",
+        "link_value": "273071374372",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677568817.png",
+        "title": "Grocery"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "273071374372",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677568817.png",
+        "title": "Grocery"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "273071374372",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677568817.png",
+        "title": "Grocery"
+      },
+      {
+        "link_type": "collections",
+        "link_value": "273071374372",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677568817.png",
+        "title": "Grocery"
+      },
+      {
+        "link_type": "list_collection",
+        "image_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/yourownfactory.myshopify.com\/homepage_component\/custom1\/category-circle_16775687038950_1_1677568817.png",
+        "title": "Grocery"
+      }
+    ]
+  },
+  "collection-grid-layout_167765907241517":{
+    "type":"collection-grid-layout",
+    "timestamp":"167765907241517",
+    "uniqueId":"collection-grid-layout_167765907241517",
+    "selection_type":"automatic",
+    "item_in_a_row":"3",
+    "item_rows":"2",
+    "item_shape":"square",
+    "item_text_alignment":"center",
+    "item_title":"1",
+    "item_border":"1",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "item_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_1_1677674310.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_2_1677674322.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_3_1677674333.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_4_1677674351.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_5_1677674365.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-grid-layout_167765907241517_6_1677674383.png",
+        "title":"Grocery"
+      }
+    ]
+  },
+  "three-product-hv-layout_167765808465314":{
+    "type":"three-product-hv-layout",
+    "timestamp":"167765808465314",
+    "uniqueId":"three-product-hv-layout_167765808465314",
+    "item_text_alignment":"center",
+    "item_shape":"square",
+    "header":"1",
+    "header_subtitle":"0",
+    "header_action":"0",
+    "item_border":"1",
+    "header_deal":"0",
+    "item_deal_start_date":"03\/01\/2023 12:03:09",
+    "item_deal_end_date":"03\/02\/2023 12:03:09",
+    "item_deal_format":"1day:20h:20m:20s",
+    "item_deal_message":"{deal-time}",
+    "header_title_text":"To meet all your requirements",
+    "header_subtitle_text":" ",
+    "header_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#a3a8b4\",\"opacity\":1,\"rgbastring\":\"rgba(163, 168, 180, 1)\"}",
+    "header_deal_color":"{\"color\":\"#b0aeae\",\"opacity\":1,\"rgbastring\":\"rgba(176, 174, 174, 1)\"}",
+    "header_action_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_action_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "header_title_font_weight":"medium",
+    "header_subtitle_font_weight":"medium",
+    "item_title_font_weight":"medium",
+    "header_title_font_style":"normal",
+    "header_subtitle_font_style":"normal",
+    "item_title_font_style":"normal",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_167765808465314_11677674699.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_167765808465314_21677674706.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/three-product-hv-layout_167765808465314_3_1677674717.png",
+        "title":"Grocery"
+      }
+    ]
+  },
+  "fixed-customisable-layout_167766351666320":{
+    "type":"fixed-customisable-layout",
+    "timestamp":"167766351666320",
+    "uniqueId":"fixed-customisable-layout_167766351666320",
+    "item_layout_type":"grid",
+    "item_in_a_row":"2",
+    "item_row":"3",
+    "no_list_item":"2",
+    "item_shape":"square",
+    "item_text_alignment":"center",
+    "header":"1",
+    "header_subtitle":"0",
+    "header_action":"1",
+    "item_border":"1",
+    "item_title":"1",
+    "item_price":"1",
+    "item_compare_at_price":"1",
+    "header_deal":"0",
+    "item_deal_start_date":"03\/01\/2023 12:03:09",
+    "item_deal_end_date":"03\/02\/2023 12:03:09",
+    "item_deal_format":"1day:20h:20m:20s",
+    "item_deal_message":"{deal-time}",
+    "header_title_text":"Trending This Week",
+    "header_subtitle_text":" ",
+    "header_action_text":"View All",
+    "header_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#a3a8b4\",\"opacity\":1,\"rgbastring\":\"rgba(163, 168, 180, 1)\"}",
+    "header_deal_color":"{\"color\":\"#b0aeae\",\"opacity\":1,\"rgbastring\":\"rgba(176, 174, 174, 1)\"}",
+    "header_action_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_action_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "cell_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "item_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_price_color":"{\"color\":\"#8a8a8a\",\"opacity\":1,\"rgbastring\":\"rgba(138, 138, 138, 1)\"}",
+    "item_compare_at_price_color":"{\"color\":\"#8a8a8a\",\"opacity\":1,\"rgbastring\":\"rgba(138, 138, 138, 1)\"}",
+    "header_title_font_weight":"medium",
+    "header_subtitle_font_weight":"medium",
+    "header_action_font_weight":"medium",
+    "item_title_font_weight":"medium",
+    "item_price_font_weight":"medium",
+    "item_compare_at_price_font_weight":"medium",
+    "item_header_font_style":"normal",
+    "header_subtitle_title_font_style":"normal",
+    "header_action_title_font_style":"normal",
+    "item_title_font_style":"normal",
+    "item_price_font_style":"normal",
+    "item_compare_at_price_font_style":"normal",
+    "items":[
+      {
+        "link_value":"273071374372",
+        "product_value":[
+          "7254819668004",
+          "7254819471396",
+          "7254819242020",
+          "7254817636388"
+        ]
+      }
+    ],
+    "productData":[
+      {
+        "id":"8147417366816",
+        "title":"Wall Hanging",
+        "body_html":"This is a wall hanging",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T04:41:32-05:00",
+        "handle":"wall-hanging",
+        "updated_at":"2023-03-01T04:44:55-05:00",
+        "published_at":"2023-03-01T04:41:32-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147417366816",
+        "options":[
+          {
+            "product_id":8147417366816,
+            "id":10349658243360,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147417366816,
+            "id":40729621987616,
+            "position":1,
+            "created_at":"2023-03-01T04:41:34-05:00",
+            "updated_at":"2023-03-01T04:41:34-05:00",
+            "alt":null,
+            "width":390,
+            "height":522,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/britta-preusse-p7KKwjP3s68-unsplash.png?v=1677663694",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729621987616"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/britta-preusse-p7KKwjP3s68-unsplash.png?v=1677663694",
+        "price":"100.00",
+        "compare_at_price":"110.00"
+      },
+      {
+        "id":"8147420021024",
+        "title":"Pillow Covers",
+        "body_html":"",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T04:46:21-05:00",
+        "handle":"pillow-covers",
+        "updated_at":"2023-03-01T04:46:28-05:00",
+        "published_at":"2023-03-01T04:46:21-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147420021024",
+        "options":[
+          {
+            "product_id":8147420021024,
+            "id":10349661880608,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147420021024,
+            "id":40729651937568,
+            "position":1,
+            "created_at":"2023-03-01T04:46:23-05:00",
+            "updated_at":"2023-03-01T04:46:23-05:00",
+            "alt":null,
+            "width":390,
+            "height":522,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/tony-lee-QtOFlR9VO1Y-unsplash.png?v=1677663983",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729651937568"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/tony-lee-QtOFlR9VO1Y-unsplash.png?v=1677663983",
+        "price":"120.00",
+        "compare_at_price":"130.00"
+      },
+      {
+        "id":"8147435159840",
+        "title":"Study Lamp",
+        "body_html":"",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T05:00:00-05:00",
+        "handle":"study-lamp",
+        "updated_at":"2023-03-01T05:00:06-05:00",
+        "published_at":"2023-03-01T05:00:00-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147435159840",
+        "options":[
+          {
+            "product_id":8147435159840,
+            "id":10349684064544,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147435159840,
+            "id":40729751912736,
+            "position":1,
+            "created_at":"2023-03-01T05:00:01-05:00",
+            "updated_at":"2023-03-01T05:00:01-05:00",
+            "alt":null,
+            "width":1170,
+            "height":1566,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/sincerely-media-VDPauwJ_sHo-unsplash.png?v=1677664801",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729751912736"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/sincerely-media-VDPauwJ_sHo-unsplash.png?v=1677664801",
+        "price":"175.00",
+        "compare_at_price":"200.00"
+      },
+      {
+        "id":"8147428802848",
+        "title":"Kids Furniture",
+        "body_html":"",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T04:56:43-05:00",
+        "handle":"kids-furniture",
+        "updated_at":"2023-03-01T04:56:45-05:00",
+        "published_at":"2023-03-01T04:56:43-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147428802848",
+        "options":[
+          {
+            "product_id":8147428802848,
+            "id":10349673644320,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147428802848,
+            "id":40729727697184,
+            "position":1,
+            "created_at":"2023-03-01T04:56:45-05:00",
+            "updated_at":"2023-03-01T04:56:45-05:00",
+            "alt":null,
+            "width":390,
+            "height":522,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/laundry-room-with-washing-machine-against-light-brown-wall_185193-100181.png?v=1677664605",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729727697184"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/laundry-room-with-washing-machine-against-light-brown-wall_185193-100181.png?v=1677664605",
+        "price":"120.00",
+        "compare_at_price":"100.00"
+      },
+      {
+        "id":"8147430080800",
+        "title":"Printed Bedsheet",
+        "body_html":"",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T04:58:05-05:00",
+        "handle":"printed-bedsheet",
+        "updated_at":"2023-03-01T04:58:10-05:00",
+        "published_at":"2023-03-01T04:58:05-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147430080800",
+        "options":[
+          {
+            "product_id":8147430080800,
+            "id":10349675053344,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147430080800,
+            "id":40729738936608,
+            "position":1,
+            "created_at":"2023-03-01T04:58:07-05:00",
+            "updated_at":"2023-03-01T04:58:07-05:00",
+            "alt":null,
+            "width":390,
+            "height":522,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/istockphoto-488980558-612x612.png?v=1677664687",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729738936608"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/istockphoto-488980558-612x612.png?v=1677664687",
+        "price":"50.00",
+        "compare_at_price":"60.00"
+      },
+      {
+        "id":"8147423822112",
+        "title":"Wall Decor",
+        "body_html":"",
+        "vendor":"magenative-integration",
+        "product_type":"",
+        "created_at":"2023-03-01T04:51:28-05:00",
+        "handle":"wall-decor",
+        "updated_at":"2023-03-01T04:55:51-05:00",
+        "published_at":"2023-03-01T04:51:28-05:00",
+        "template_suffix":"",
+        "status":"active",
+        "published_scope":"web",
+        "tags":"",
+        "admin_graphql_api_id":"gid:\/\/shopify\/Product\/8147423822112",
+        "options":[
+          {
+            "product_id":8147423822112,
+            "id":10349667746080,
+            "name":"Title",
+            "position":1,
+            "values":[
+              "Default Title"
+            ]
+          }
+        ],
+        "images":[
+          {
+            "product_id":8147423822112,
+            "id":40729685360928,
+            "position":1,
+            "created_at":"2023-03-01T04:51:30-05:00",
+            "updated_at":"2023-03-01T04:51:30-05:00",
+            "alt":null,
+            "width":390,
+            "height":522,
+            "src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/Rectangle1979_2.png?v=1677664290",
+            "variant_ids":[
+            ],
+            "admin_graphql_api_id":"gid:\/\/shopify\/ProductImage\/40729685360928"
+          }
+        ],
+        "image":"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3798\/2752\/products\/Rectangle1979_2.png?v=1677664290",
+        "price":"150.00",
+        "compare_at_price":"175.00"
+      }
+    ]
+  },
+  "collection-list-slider_167766330083919":{
+    "type":"collection-list-slider",
+    "timestamp":"167766330083919",
+    "uniqueId":"collection-list-slider_167766330083919",
+    "item_shape":"square",
+    "item_text_alignment":"center",
+    "header":"1",
+    "header_subtitle":"0",
+    "item_border":"1",
+    "header_title_text":"Shop Your Favourite Products",
+    "header_subtitle_text":" ",
+    "header_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "header_title_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "header_subtitle_color":"{\"color\":\"#a3a8b4\",\"opacity\":1,\"rgbastring\":\"rgba(163, 168, 180, 1)\"}",
+    "panel_background_color":"{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "item_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "header_title_font_weight":"light",
+    "header_subtitle_font_weight":"light",
+    "item_title_font_weight":"light",
+    "header_title_font_style":"normal",
+    "header_subtitle_font_style":"normal",
+    "item_title_font_style":"normal",
+    "item_total":"",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-list-slider_167766330083919_1_1677674492.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-list-slider_167766330083919_2_1677674501.png",
+        "title":"Grocery"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/collection-list-slider_167766330083919_3_1677674512.png",
+        "title":"Grocery"
+      }
+    ]
+  },
+  "banner-slider_167765786140912":{
+    "type":"banner-slider",
+    "timestamp":"167765786140912",
+    "uniqueId":"banner-slider_167765786140912",
+    "item_dots":"1",
+    "choiceList":"0",
+    "active_dot_color":"{\"color\":\"#03AD53\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "inactive_dot_color":"{\"color\":\"#aaaaaa\",\"opacity\":1,\"rgbastring\":\"rgba(170, 170, 170, 1)\"}",
+    "item_total":"",
+    "items":[
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/banner-slider_167765786140912_11677673623.png"
+      },
+      {
+        "link_type":"collections",
+        "link_value":"273071374372",
+        "image_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/banner-slider_167765786140912_21677673632.png"
+      }
+    ]
+  },
+  "standalone-banner_16529674477790": {
+    "type": "standalone-banner",
+    "timestamp": "16529674477790",
+    "uniqueId": "standalone-banner_16529674477790",
+    "item_button_position": "no-btn",
+    "item_image_size": "original",
+    "item_text_alignment": "center",
+    "first_button_text": "",
+    "second_button_text": "",
+    "button_background_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "button_border_color": "{\"color\":\"#ffffff\",\"opacity\":1,\"rgbastring\":\"rgba(255, 255, 255, 1)\"}",
+    "button_text_color": "{\"color\":\"#000000\",\"opacity\":1,\"rgbastring\":\"rgba(0, 0, 0, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/malgudi-your-online-fruit-vegetables-specialist.myshopify.com\/homepage_component\/custom1\/top-bar_1640694479_1_1677264949.png",
+    "banner_link_type": "collections",
+    "banner_link_value": "273071374372"
+  },
+  "standalone-banner_16588293348920": {
+    "type": "standalone-banner",
+    "timestamp": "16588293348920",
+    "uniqueId": "standalone-banner_16588293348920",
+    "item_button_position": "no-btn",
+    "item_image_size": "2x",
+    "item_text_alignment": "center",
+    "first_button_text": "",
+    "second_button_text": "",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/malgudi-your-online-fruit-vegetables-specialist.myshopify.com\/homepage_component\/custom1\/top-bar_1640694479_2_1676123367.png",
+    "banner_link_type": "collections",
+    "banner_link_value": "273071374372"
+  },
+  "standalone-banner_167765841302615":{
+    "type":"standalone-banner",
+    "timestamp":"167765841302615",
+    "uniqueId":"standalone-banner_167765841302615",
+    "item_button_position":"no-btn",
+    "item_image_size":"2x",
+    "item_text_alignment":"center",
+    "first_button_text":"",
+    "second_button_text":"",
+    "button_background_color":"{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color":"{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color":"{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight":"medium",
+    "item_font_style":"normal",
+    "banner_url":"https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/magenative-integration.myshopify.com\/homepage_component\/custom1\/standalone-banner_167765841302615_11677674031.png",
+    "banner_link_type":"collections",
+    "banner_link_value":"273071374372"
+  },
+  "standalone-banner_16699632336551": {
+    "type": "standalone-banner",
+    "timestamp": "16699632336551",
+    "uniqueId": "standalone-banner_16699632336551",
+    "item_button_position": "no-btn",
+    "item_image_size": "2x",
+    "item_text_alignment": "center",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/malgudi-your-online-fruit-vegetables-specialist.myshopify.com\/homepage_component\/custom1\/compressed-standalone-banner_16589300519090_11664127529.jpg",
+    "banner_link_type": "collections",
+    "banner_link_value": "273071374372"
+  },
+  "standalone-banner_16699637868192": {
+    "type": "standalone-banner",
+    "timestamp": "16699637868192",
+    "uniqueId": "standalone-banner_16699637868192",
+    "item_button_position": "no-btn",
+    "item_image_size": "original",
+    "item_text_alignment": "center",
+    "button_background_color": "{\"color\":\"#f2f6f8\",\"opacity\":1,\"rgbastring\":\"rgba(242, 246, 248, 1)\"}",
+    "button_border_color": "{\"color\":\"#e6e6e6\",\"opacity\":1,\"rgbastring\":\"rgba(230, 230, 230, 1)\"}",
+    "button_text_color": "{\"color\":\"#5b616f\",\"opacity\":1,\"rgbastring\":\"rgba(91, 97, 111, 1)\"}",
+    "item_font_weight": "medium",
+    "item_font_style": "normal",
+    "banner_url": "https:\/\/d2idqwn63w1bgz.cloudfront.net\/frontend\/modules\/shopifymobilenew\/assets\/repository\/clientImage\/malgudi-your-online-fruit-vegetables-specialist.myshopify.com\/homepage_component\/custom1\/compressed-standalone-banner_16589300519090_11664127529.jpg",
+    "banner_link_type": "collections",
+    "banner_link_value": "273071374372"
+  }
+}
