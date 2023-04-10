@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rasmi Online Shop</string>
+    <string name="app_name">isli online</string>
     <string name="login">تسجيل الدخول</string>
     <string name="errorString">حدث خطأ ما. الرجاء المحاولة في وقت اخر.</string>
     <string name="drawer_open">فتح</string>

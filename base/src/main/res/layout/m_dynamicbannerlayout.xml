@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                android:scaleType="fitXY"
+                android:scaleType="center"
                 android:contentDescription="@string/image"
                 android:tag="banner"
                 bind:imageUrl="@{common.imageurl}"

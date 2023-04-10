@@ -1452,7 +1452,7 @@ open class NewBaseActivity : AppCompatActivity(), BaseFragment.OnFragmentInterac
                                                 true
                                         } //check done
                                         "social_login" -> {
-                                            SplashViewModel.featuresModel.socialloginEnable = true
+                                            SplashViewModel.featuresModel.socialloginEnable = false
                                         }
                                         "native_checkout" -> {
                                             SplashViewModel.featuresModel.native_checkout = true

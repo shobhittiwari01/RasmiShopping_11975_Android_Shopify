@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rasmi Online Shop</string>
+    <string name="app_name">isli online</string>
     <string name="login">Login</string>
     <string name="errorString">Something went wrong, Please try again.</string>
     <string name="drawer_open">open</string>
