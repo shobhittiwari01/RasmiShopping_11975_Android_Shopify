@@ -2975,7 +2975,10 @@ class HomePageViewModel(var repository: Repository) : ViewModel() {
                                                 "1"->productdata!!.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                                                 "2"-> productdata!!.layoutManager = GridLayoutManager(context,2, GridLayoutManager.HORIZONTAL, false)
                                             }
+                                        }else{
+                                            productdata!!.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                                         }
+
                                         homeadapter.setData(list, context, jsonObject, repository)
                                         productdata!!.adapter = homeadapter
                                     }
